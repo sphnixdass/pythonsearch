@@ -27,8 +27,8 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from threading import Thread
-
-
+from nltk import tokenize
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 app = Flask(__name__)
 
@@ -58,10 +58,27 @@ def test_message(message):
     t1 = threading.Thread(target=googleSearch)
     #t2 = threading.Thread(target=googleSearch)
     t1.start()
-
-    #t2.start()
     t1.join()
-    googleSearchIndividual()
+
+    t1 = threading.Thread(target=googleSearchIndividual)
+    t1.start()
+
+
+    t2 = threading.Thread(target=googleSearchIndividual)
+    t2.start()
+
+
+    t3 = threading.Thread(target=googleSearchIndividual)
+    t3.start()
+
+
+    t4 = threading.Thread(target=googleSearchIndividual)
+    t4.start()
+
+    t1.join()
+    t2.join()
+    t3.join()
+    t4.join()
     #t2.join()
 
     #googleSearch()
@@ -107,7 +124,7 @@ def googleSearch():
     elem.send_keys(Keys.RETURN)
     #assert "No results found." not in driver.page_source
 
-    for pa in range(2,3):
+    for pa in range(2,4):
         time.sleep(1)
         content = driver.find_elements_by_class_name('rc')
         for x in content:
@@ -167,19 +184,35 @@ def googleSearchIndividual():
             return
 
 
-        driver.get(rows1[4])
+        driver.get(rows1[1])
+        time.sleep(3)
         strbody3 = ""
         strbody = driver.find_elements_by_tag_name('p')
         for x in strbody:
             strbody2 = driver.execute_script("return arguments[0].innerText;", x)
             strbody3 = strbody3 + '/n' + strbody2
-            
+
+        lines_list = tokenize.sent_tokenize(strbody3)
+        #sentences.extend(strbody3)
+        sid = SentimentIntensityAnalyzer()
+        strsen =""
+        strsentag =""
+        for sentence in lines_list:
+            #print(sentence)
+            ss = sid.polarity_scores(sentence)
+            if ss['neg'] > 0:
+                strsen = strsen + "AI Score = " + str(ss['neg']) + " ==> " + sentence + '/n'
+                strsentag = strsentag + "<b>" + sentence + "(AI Score = " + str(ss['neg']) + ")</b>" + '/n'
+
+                print("AI Score = " + str(ss['neg']) + " ==> " + sentence)
+            else:
+                strsentag = strsentag + sentence + '/n'
             #print(strbody2)
 
 
         conn = sqlite3.connect('/home/dass/Coding/Python/flask/GoogleSearch/dassdb')
         c = conn.cursor()
-        c.execute('update Master set rawtext = "' + str(driver.page_source).replace('"', r'~') + '" where ID = "' + str(rows1[0]) + '"')
+        c.execute('update Master set rawtext = "' + str(driver.page_source).replace('"', r'~') + '", sentext = "' + str(strsen).replace('"', r'~') + '", sentexttag = "' + str(strsentag).replace('"', r'~') + '"  where ID = "' + str(rows1[0]) + '"')
         conn.commit()
         conn.close()
 
