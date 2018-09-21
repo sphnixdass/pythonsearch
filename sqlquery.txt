@@ -1,0 +1,10 @@
+<([a-zA-Z]+)(?:[^>]*[^/]*)?>
+
+<\s*a[^>]*>(.*?)<\s*/\s*a>
+
+<(\w+)\s[^>]*name=\"tariff\"[^>]*>[\s\S]*\1>
+
+<(.*?)[^/]>
+
+
+CREATE TABLE "Master" ( `ID` INTEGER PRIMARY KEY AUTOINCREMENT, `CompanyName` TEXT, `Racf` TEXT, `Status` TEXT, `Url` TEXT, `googletext` TEXT, `googletagtext` TEXT, `rawtext` TEXT, `sentext` TEXT, `sentexttag` TEXT )
