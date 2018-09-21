@@ -1,0 +1,1039 @@
+1537557836151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zERVfp0QWRfp"
+1537557845889	Marionette	INFO	Listening on port 42847
+1537557845928	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537557845983	Marionette	DEBUG	[2147483649] Frame script loaded
+1537557846071	Marionette	DEBUG	[2147483649] Frame script registered
+1537557846094	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537557847349	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537557847793	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537557848772	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537557853031	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=V0WlW5fHD86b9QP_iSc&q=TCS&oq=TCS&gs_l=psy-ab.3...637.643.0.657.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.cuDZCk0vhbs
+1537557853158	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=V0WlW5fHD86b9QP_iSc&q=TCS&oq=TCS&gs_l=psy-ab.3...637.643.0.657.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.cuDZCk0vhbs
+1537557853161	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=V0WlW5fHD86b9QP_iSc&q=TCS&oq=TCS&gs_l=psy-ab.3...637.643.0.657.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.cuDZCk0vhbs
+1537557853726	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=WEWlW4ruPIio9QPEtYfIBw&start=10&sa=N&biw=1280&bih=873
+1537557854167	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=WEWlW4ruPIio9QPEtYfIBw&start=10&sa=N&biw=1280&bih=873
+1537557857179	Marionette	INFO	Stopped listening on port 42847
+1537557858405	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NLhxqUcTEV3p"
+1537557862571	Marionette	INFO	Listening on port 43537
+1537557862700	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537557862754	Marionette	DEBUG	[2147483649] Frame script loaded
+1537557862755	Marionette	DEBUG	[2147483649] Frame script registered
+1537557862788	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537557863763	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537557863909	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537557864584	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537557868548	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=Z0WlW5-VKpCf9QOk_LKgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...457.465.0.481.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.J2YBtAsLDp0
+1537557868671	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=Z0WlW5-VKpCf9QOk_LKgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...457.465.0.481.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.J2YBtAsLDp0
+1537557868673	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=Z0WlW5-VKpCf9QOk_LKgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...457.465.0.481.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.J2YBtAsLDp0
+1537557869148	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=aEWlW8aGKoS3rQHboaqwDQ&start=10&sa=N&biw=1280&bih=873
+1537557869590	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=aEWlW8aGKoS3rQHboaqwDQ&start=10&sa=N&biw=1280&bih=873
+1537557872602	Marionette	INFO	Stopped listening on port 43537
+1537557936787	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.p1TZ2xSTgNKU"
+1537557940045	Marionette	INFO	Listening on port 45655
+1537557940193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537557940251	Marionette	DEBUG	[2147483649] Frame script loaded
+1537557940252	Marionette	DEBUG	[2147483649] Frame script registered
+1537557940284	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537557941482	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537557941630	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537557942456	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 9805, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537557951590	Marionette	INFO	Stopped listening on port 45655
+1537557997668	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ogy2xENKN0wU"
+1537558001080	Marionette	INFO	Listening on port 40847
+1537558001244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558001315	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558001316	Marionette	DEBUG	[2147483649] Frame script registered
+1537558001360	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558003043	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558003183	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558003906	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558007995	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=8kWlW4e9Os36rQH9iamwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...624.631.0.649.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.P6YcxLrq96M
+1537558008123	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=8kWlW4e9Os36rQH9iamwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...624.631.0.649.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.P6YcxLrq96M
+1537558008124	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=8kWlW4e9Os36rQH9iamwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...624.631.0.649.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.P6YcxLrq96M
+1537558008586	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=9EWlW_rBCdLt9QP-2qawDQ&start=10&sa=N&biw=1280&bih=873
+1537558009710	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=9EWlW_rBCdLt9QP-2qawDQ&start=10&sa=N&biw=1280&bih=873
+1537558012721	Marionette	INFO	Stopped listening on port 40847
+1537558013846	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8FNhMsrACeRy"
+1537558017077	Marionette	INFO	Listening on port 45163
+1537558017206	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558017261	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558017268	Marionette	DEBUG	[2147483649] Frame script registered
+1537558017322	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558018114	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558018254	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558019224	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558023048	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=AkalW6PIAdX6rQGk9ICQCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...470.478.0.495.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7PsSCS0i0oE
+1537558023179	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=AkalW6PIAdX6rQGk9ICQCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...470.478.0.495.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7PsSCS0i0oE
+1537558023180	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=AkalW6PIAdX6rQGk9ICQCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...470.478.0.495.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7PsSCS0i0oE
+1537558023730	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=A0alW9KjFImy9QPJ1J6ICA&start=10&sa=N&biw=1280&bih=873
+1537558024147	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=A0alW9KjFImy9QPJ1J6ICA&start=10&sa=N&biw=1280&bih=873
+1537558027158	Marionette	INFO	Stopped listening on port 45163
+1537558376393	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0PQcLcdQhaIe"
+1537558379646	Marionette	INFO	Listening on port 43609
+1537558379788	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558379844	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558379862	Marionette	DEBUG	[2147483649] Frame script registered
+1537558379917	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558381593	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558381740	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558382459	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558386299	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=bUelW4yYH827rQGCy63wBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...512.519.0.534.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Hq3sZaXQlWQ
+1537558386422	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=bUelW4yYH827rQGCy63wBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...512.519.0.534.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Hq3sZaXQlWQ
+1537558386423	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=bUelW4yYH827rQGCy63wBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...512.519.0.534.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Hq3sZaXQlWQ
+1537558386871	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=bkelW9DJIZD1rQHpr56IDA&start=10&sa=N&biw=1280&bih=873
+1537558387819	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=bkelW9DJIZD1rQHpr56IDA&start=10&sa=N&biw=1280&bih=873
+1537558390830	Marionette	INFO	Stopped listening on port 43609
+1537558502637	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Vcb8D2F1QsER"
+1537558506062	Marionette	INFO	Listening on port 37595
+1537558506208	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558506268	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558506270	Marionette	DEBUG	[2147483649] Frame script registered
+1537558506333	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558508072	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558508213	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558508957	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 13555, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537558572449	Marionette	INFO	Stopped listening on port 37595
+1537558627189	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uxD0uXBR5wVf"
+1537558630408	Marionette	INFO	Listening on port 39721
+1537558630542	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558630600	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558630601	Marionette	DEBUG	[2147483649] Frame script registered
+1537558630664	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558632422	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558632580	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558633284	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558756415	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dTQe9X77UsHV"
+1537558761223	Marionette	INFO	Listening on port 44237
+1537558761255	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558761311	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558761364	Marionette	DEBUG	[2147483649] Frame script registered
+1537558761405	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558762636	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558763233	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558765075	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558769241	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=6kilW4TFIJvw9QO0o7LYCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...468.476.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7QKOK3L8IfI
+1537558769462	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=6kilW4TFIJvw9QO0o7LYCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...468.476.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7QKOK3L8IfI
+1537558769464	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=6kilW4TFIJvw9QO0o7LYCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...468.476.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.7QKOK3L8IfI
+1537558769927	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=7UilW9nCCtO_rQH70ZboDQ&start=10&sa=N&biw=1280&bih=873
+1537558770342	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=7UilW9nCCtO_rQH70ZboDQ&start=10&sa=N&biw=1280&bih=873
+1537558773353	Marionette	INFO	Stopped listening on port 44237
+1537558851766	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2o6QziF4LWKS"
+1537558855279	Marionette	INFO	Listening on port 45187
+1537558855421	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558855481	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558855488	Marionette	DEBUG	[2147483649] Frame script registered
+1537558855539	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558857248	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558857380	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558858085	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558862099	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=SUmlW4PeCcP9rQG3nqDADA&q=TCS&oq=TCS&gs_l=psy-ab.3...595.601.0.620.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Y2bhxdX8tOw
+1537558862223	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=SUmlW4PeCcP9rQG3nqDADA&q=TCS&oq=TCS&gs_l=psy-ab.3...595.601.0.620.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Y2bhxdX8tOw
+1537558862226	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=SUmlW4PeCcP9rQG3nqDADA&q=TCS&oq=TCS&gs_l=psy-ab.3...595.601.0.620.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Y2bhxdX8tOw
+1537558862713	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=SkmlW_-zEoLfrQG51YeYDA&start=10&sa=N&biw=1280&bih=873
+1537558863120	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=SkmlW_-zEoLfrQG51YeYDA&start=10&sa=N&biw=1280&bih=873
+1537558866128	Marionette	INFO	Stopped listening on port 45187
+1537558893343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.A6ouiT70Lerf"
+1537558898326	Marionette	INFO	Listening on port 45197
+1537558898359	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558898413	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558898414	Marionette	DEBUG	[2147483649] Frame script registered
+1537558898437	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558899380	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558899485	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558900388	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558904271	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=c0mlW6qzDdL2rQGjx4aADw&q=TCS&oq=TCS&gs_l=psy-ab.3...463.471.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.jCNWsQI_XoI
+1537558904393	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=c0mlW6qzDdL2rQGjx4aADw&q=TCS&oq=TCS&gs_l=psy-ab.3...463.471.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.jCNWsQI_XoI
+1537558904395	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=c0mlW6qzDdL2rQGjx4aADw&q=TCS&oq=TCS&gs_l=psy-ab.3...463.471.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.jCNWsQI_XoI
+1537558904832	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=dEmlW6CrHdeR9QPM87uYCQ&start=10&sa=N&biw=1280&bih=873
+1537558904898	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=dEmlW6CrHdeR9QPM87uYCQ&start=10&sa=N&biw=1280&bih=873
+1537558907930	Marionette	INFO	Stopped listening on port 45197
+[Parent 17221, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537558931318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iPaqNcTD6cwR"
+1537558934836	Marionette	INFO	Listening on port 36085
+1537558934982	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558935036	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558935038	Marionette	DEBUG	[2147483649] Frame script registered
+1537558935062	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558935859	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558935987	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558936889	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558940828	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=l0mlW5PELZngrQHRn6mwBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...477.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.5UbLNwvsZMc
+1537558940946	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=l0mlW5PELZngrQHRn6mwBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...477.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.5UbLNwvsZMc
+1537558940949	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=l0mlW5PELZngrQHRn6mwBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...477.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.5UbLNwvsZMc
+1537558941605	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=mEmlW4GlPNmsrQGwyproBw&start=10&sa=N&biw=1280&bih=873
+1537558942057	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=mEmlW4GlPNmsrQGwyproBw&start=10&sa=N&biw=1280&bih=873
+1537558945070	Marionette	INFO	Stopped listening on port 36085
+1537558963291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nj6dZGMMTYGj"
+1537558966933	Marionette	INFO	Listening on port 41791
+1537558967067	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537558967125	Marionette	DEBUG	[2147483649] Frame script loaded
+1537558967134	Marionette	DEBUG	[2147483649] Frame script registered
+1537558967203	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537558967936	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537558968071	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537558968945	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537558972820	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=t0mlW8ybM9q6rQHYkYTgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...467.474.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.EFQ4g72lPEg
+1537558972926	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=t0mlW8ybM9q6rQHYkYTgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...467.474.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.EFQ4g72lPEg
+1537558972931	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=t0mlW8ybM9q6rQHYkYTgDA&q=TCS&oq=TCS&gs_l=psy-ab.3...467.474.0.490.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.EFQ4g72lPEg
+1537558973413	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=uUmlW47yApb0rQG5vZfIBg&start=10&sa=N&biw=1280&bih=873
+1537558973754	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=uUmlW47yApb0rQG5vZfIBg&start=10&sa=N&biw=1280&bih=873
+1537558976764	Marionette	INFO	Stopped listening on port 41791
+1537559555978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.A7eDboA1SKlU"
+1537559559041	Marionette	INFO	Listening on port 35681
+1537559559094	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559559144	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559559242	Marionette	DEBUG	[2147483649] Frame script registered
+1537559559274	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559560122	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559560630	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559561600	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559562899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ca6kJ8aRa8wj"
+1537559566601	Marionette	INFO	Listening on port 41029
+1537559566617	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559566692	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559566693	Marionette	DEBUG	[2147483649] Frame script registered
+1537559566810	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559567679	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559567801	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559568748	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 21025, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537559572625	Marionette	INFO	Stopped listening on port 41029
+[Parent 20187, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537559575119	Marionette	INFO	Stopped listening on port 35681
+1537559596782	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.C02TBWPckghl"
+1537559599961	Marionette	INFO	Listening on port 40235
+1537559600004	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559600062	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559600109	Marionette	DEBUG	[2147483649] Frame script registered
+1537559600133	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559601850	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559601988	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559602683	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 21910, Gecko_IOThread] WARNING: pipe error (72): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537559616559	Marionette	INFO	Stopped listening on port 40235
+1537559630876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b01XmARCqDg9"
+1537559634076	Marionette	INFO	Listening on port 43941
+1537559634105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559634162	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559634221	Marionette	DEBUG	[2147483649] Frame script registered
+1537559634268	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559637179	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559637314	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559638001	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559642223	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=VUylW6m2BY2_rQGc1IGwDA&q=TCS&oq=TCS&gs_l=psy-ab.3...462.472.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.alJbo_22HsA
+1537559642344	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=VUylW6m2BY2_rQGc1IGwDA&q=TCS&oq=TCS&gs_l=psy-ab.3...462.472.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.alJbo_22HsA
+1537559642346	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=VUylW6m2BY2_rQGc1IGwDA&q=TCS&oq=TCS&gs_l=psy-ab.3...462.472.0.486.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.alJbo_22HsA
+1537559642904	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=VkylW4PxBY2_rQGc1IGwDA&start=10&sa=N&biw=1280&bih=873
+1537559643305	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=VkylW4PxBY2_rQGc1IGwDA&start=10&sa=N&biw=1280&bih=873
+1537559646315	Marionette	INFO	Stopped listening on port 43941
+1537559682690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.g1fTN7O9gGvh"
+1537559685758	Marionette	INFO	Listening on port 37391
+1537559685903	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559685969	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559685971	Marionette	DEBUG	[2147483649] Frame script registered
+1537559686028	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559686874	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559686973	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559688214	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559692046	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=hkylW7WPLNKoyAPRoKUY&q=TCS&oq=TCS&gs_l=psy-ab.3...820.828.0.841.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Bofv-ccZWTw
+1537559692167	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=hkylW7WPLNKoyAPRoKUY&q=TCS&oq=TCS&gs_l=psy-ab.3...820.828.0.841.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Bofv-ccZWTw
+1537559692168	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=hkylW7WPLNKoyAPRoKUY&q=TCS&oq=TCS&gs_l=psy-ab.3...820.828.0.841.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.Bofv-ccZWTw
+1537559692691	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=iEylW8foEpSo9QOwj4rgBg&start=10&sa=N&biw=1280&bih=873
+1537559692762	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=iEylW8foEpSo9QOwj4rgBg&start=10&sa=N&biw=1280&bih=873
+1537559695773	Marionette	INFO	Stopped listening on port 37391
+1537559806237	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CL2SkDhRI8Lz"
+1537559809482	Marionette	INFO	Listening on port 39961
+1537559809618	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559809678	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559809679	Marionette	DEBUG	[2147483649] Frame script registered
+1537559809710	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559811447	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559811609	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559812425	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559816310	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=A02lW7mFFtXyrAHX5Y14&q=TCS&oq=TCS&gs_l=psy-ab.3...616.624.0.641.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.AexRyxrEukA
+1537559816431	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=A02lW7mFFtXyrAHX5Y14&q=TCS&oq=TCS&gs_l=psy-ab.3...616.624.0.641.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.AexRyxrEukA
+1537559816432	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=A02lW7mFFtXyrAHX5Y14&q=TCS&oq=TCS&gs_l=psy-ab.3...616.624.0.641.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.AexRyxrEukA
+1537559816970	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=BE2lW5-oINHtrQHW76ywCQ&start=10&sa=N&biw=1280&bih=873
+1537559817053	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=BE2lW5-oINHtrQHW76ywCQ&start=10&sa=N&biw=1280&bih=873
+1537559820061	Marionette	INFO	Stopped listening on port 39961
+1537559838061	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.57RrY9QQTEUN"
+1537559841200	Marionette	INFO	Listening on port 45445
+1537559841328	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559841383	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559841384	Marionette	DEBUG	[2147483649] Frame script registered
+1537559841422	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559842156	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559842506	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559843190	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559846919	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=Ik2lW4WcBJCv9QOy8aDgCA&q=TCS&oq=TCS&gs_l=psy-ab.3...503.509.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.PxuNnefDOSE
+1537559847043	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=Ik2lW4WcBJCv9QOy8aDgCA&q=TCS&oq=TCS&gs_l=psy-ab.3...503.509.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.PxuNnefDOSE
+1537559847045	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=Ik2lW4WcBJCv9QOy8aDgCA&q=TCS&oq=TCS&gs_l=psy-ab.3...503.509.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.PxuNnefDOSE
+1537559847556	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=I02lW7_rEdmd9QOmt6awDA&start=10&sa=N&biw=1280&bih=873
+1537559847898	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=I02lW7_rEdmd9QOmt6awDA&start=10&sa=N&biw=1280&bih=873
+1537559850914	Marionette	INFO	Stopped listening on port 45445
+1537559884771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oAu5pCJxvmDl"
+1537559888497	Marionette	INFO	Listening on port 46629
+1537559888581	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559888642	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559888703	Marionette	DEBUG	[2147483649] Frame script registered
+1537559888741	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559889588	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559889891	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559890589	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559894389	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=UU2lW9HQHpaf9QOAlYqYDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...516.523.0.537.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.rX4VXn8BX6I
+1537559894512	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=UU2lW9HQHpaf9QOAlYqYDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...516.523.0.537.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.rX4VXn8BX6I
+1537559894513	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=UU2lW9HQHpaf9QOAlYqYDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...516.523.0.537.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.rX4VXn8BX6I
+1537559895075	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=Uk2lW__HKY699QPgl4rIDA&start=10&sa=N&biw=1280&bih=873
+1537559895436	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=Uk2lW__HKY699QPgl4rIDA&start=10&sa=N&biw=1280&bih=873
+1537559898446	Marionette	INFO	Stopped listening on port 46629
+1537559915338	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WB6Klxsj1lPm"
+1537559918794	Marionette	INFO	Listening on port 35161
+1537559918936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559919014	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559919022	Marionette	DEBUG	[2147483649] Frame script registered
+1537559919088	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559919807	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559919936	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559920780	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559924539	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=b02lW_exJpf79QP2hpnAAg&q=TCS&oq=TCS&gs_l=psy-ab.3...472.480.0.497.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.MqA8cMEziWo
+1537559924665	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=b02lW_exJpf79QP2hpnAAg&q=TCS&oq=TCS&gs_l=psy-ab.3...472.480.0.497.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.MqA8cMEziWo
+1537559924667	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=b02lW_exJpf79QP2hpnAAg&q=TCS&oq=TCS&gs_l=psy-ab.3...472.480.0.497.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.MqA8cMEziWo
+1537559925186	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=cE2lW-3_NZP99QPGqK1g&start=10&sa=N&biw=1280&bih=873
+1537559925598	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=cE2lW-3_NZP99QPGqK1g&start=10&sa=N&biw=1280&bih=873
+1537559928609	Marionette	INFO	Stopped listening on port 35161
+1537559948319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.S55DGr0enqRE"
+1537559951793	Marionette	INFO	Listening on port 39583
+1537559951844	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559951916	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559951972	Marionette	DEBUG	[2147483649] Frame script registered
+1537559952004	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559952862	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559953223	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559953911	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559957695	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=kE2lW5CDL5Wl9QOpg5aYBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...508.516.0.531.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.EE1MlJ0aMvY
+1537559957817	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=kE2lW5CDL5Wl9QOpg5aYBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...508.516.0.531.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.EE1MlJ0aMvY
+1537559957819	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=kE2lW5CDL5Wl9QOpg5aYBQ&q=TCS&oq=TCS&gs_l=psy-ab.3...508.516.0.531.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.EE1MlJ0aMvY
+1537559958299	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=kk2lW9V3kLCtAYqOqegM&start=10&sa=N&biw=1280&bih=873
+1537559958730	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=kk2lW9V3kLCtAYqOqegM&start=10&sa=N&biw=1280&bih=873
+1537559961741	Marionette	INFO	Stopped listening on port 39583
+1537559988139	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.U0UoXtGMf7fv"
+1537559991413	Marionette	INFO	Listening on port 40417
+1537559991450	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537559991505	Marionette	DEBUG	[2147483649] Frame script loaded
+1537559991572	Marionette	DEBUG	[2147483649] Frame script registered
+1537559991604	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537559994460	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537559994594	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537559995298	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537559999282	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=uk2lW_uZFtmsrQGwyproBw&q=TCS&oq=TCS&gs_l=psy-ab.3...479.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OBHfHYZAEd8
+1537559999403	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=uk2lW_uZFtmsrQGwyproBw&q=TCS&oq=TCS&gs_l=psy-ab.3...479.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OBHfHYZAEd8
+1537559999404	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=uk2lW_uZFtmsrQGwyproBw&q=TCS&oq=TCS&gs_l=psy-ab.3...479.485.0.500.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OBHfHYZAEd8
+1537559999867	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=u02lW4qgGJbt9QOWx4XYDA&start=10&sa=N&biw=1280&bih=873
+1537560000262	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=u02lW4qgGJbt9QOWx4XYDA&start=10&sa=N&biw=1280&bih=873
+1537560003272	Marionette	INFO	Stopped listening on port 40417
+1537560244445	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GgBnGnixvWV3"
+1537560248058	Marionette	INFO	Listening on port 43479
+1537560248188	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560248241	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560248243	Marionette	DEBUG	[2147483649] Frame script registered
+1537560248288	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560249107	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560249245	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560249916	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 30178, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537560268283	Marionette	INFO	Stopped listening on port 43479
+1537560285999	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZVJovb7Ncrur"
+1537560289623	Marionette	INFO	Listening on port 39135
+1537560289753	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560289807	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560289808	Marionette	DEBUG	[2147483649] Frame script registered
+1537560289845	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560290652	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560291033	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560291745	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 31040, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537560299924	Marionette	INFO	Stopped listening on port 39135
+1537560311992	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vek2rk2lbWN9"
+1537560315165	Marionette	INFO	Listening on port 34423
+1537560315290	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560315345	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560315346	Marionette	DEBUG	[2147483649] Frame script registered
+1537560315407	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560316137	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560316277	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560316978	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537560320821	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=_E6lW8GSA8rc9QPeoI_gBA&q=TCS&oq=TCS&gs_l=psy-ab.3...495.508.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.eRTau_pMjpg
+1537560320944	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=_E6lW8GSA8rc9QPeoI_gBA&q=TCS&oq=TCS&gs_l=psy-ab.3...495.508.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.eRTau_pMjpg
+1537560320946	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=_E6lW8GSA8rc9QPeoI_gBA&q=TCS&oq=TCS&gs_l=psy-ab.3...495.508.0.525.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.eRTau_pMjpg
+1537560321510	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=_U6lW9nxBIvgrQG7-ZW4BQ&start=10&sa=N&biw=1280&bih=873
+1537560321823	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=_U6lW9nxBIvgrQG7-ZW4BQ&start=10&sa=N&biw=1280&bih=873
+1537560324834	Marionette	INFO	Stopped listening on port 34423
+1537560355592	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.I8K7OQtrYGZw"
+1537560358714	Marionette	INFO	Listening on port 35701
+1537560358847	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560358906	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560358934	Marionette	DEBUG	[2147483649] Frame script registered
+1537560358984	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560359703	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560359853	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560360785	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537560364812	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=J0-lW57eJdLbrQH0t5fQAQ&q=TCS&oq=TCS&gs_l=psy-ab.3...509.515.0.529.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.opgOZJ0t4QQ
+1537560364934	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=J0-lW57eJdLbrQH0t5fQAQ&q=TCS&oq=TCS&gs_l=psy-ab.3...509.515.0.529.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.opgOZJ0t4QQ
+1537560364936	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=J0-lW57eJdLbrQH0t5fQAQ&q=TCS&oq=TCS&gs_l=psy-ab.3...509.515.0.529.3.1.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..3.0.0....0.opgOZJ0t4QQ
+1537560365661	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=KE-lW9mQNYuc9QPtzYXYCw&start=10&sa=N&biw=1280&bih=873
+1537560365891	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=KE-lW9mQNYuc9QPtzYXYCw&start=10&sa=N&biw=1280&bih=873
+1537560368903	Marionette	INFO	Stopped listening on port 35701
+[Parent 358, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537560394593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OLVsvtfKTimQ"
+1537560397709	Marionette	INFO	Listening on port 45965
+1537560397844	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560397904	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560397930	Marionette	DEBUG	[2147483649] Frame script registered
+1537560397988	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560398933	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560399342	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560400038	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537560404048	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=Tk-lW4KuM5ncrQG6o6H4Cg&q=TCS&oq=TCS&gs_l=psy-ab.3...507.513.0.527.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.BkHa7IlYoJ0
+1537560404159	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=Tk-lW4KuM5ncrQG6o6H4Cg&q=TCS&oq=TCS&gs_l=psy-ab.3...507.513.0.527.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.BkHa7IlYoJ0
+1537560404162	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=Tk-lW4KuM5ncrQG6o6H4Cg&q=TCS&oq=TCS&gs_l=psy-ab.3...507.513.0.527.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.BkHa7IlYoJ0
+1537560404592	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=UE-lW_ndB5WA9QPhnJDQDA&start=10&sa=N&biw=1280&bih=873
+1537560404960	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=UE-lW_ndB5WA9QPhnJDQDA&start=10&sa=N&biw=1280&bih=873
+1537560407971	Marionette	INFO	Stopped listening on port 45965
+[Parent 1518, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537560441043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.m8abM5QDHbKr"
+1537560444052	Marionette	INFO	Listening on port 33687
+1537560444200	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537560444263	Marionette	DEBUG	[2147483649] Frame script loaded
+1537560444264	Marionette	DEBUG	[2147483649] Frame script registered
+1537560444283	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537560446044	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537560446179	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537560446875	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537560451115	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=fU-lW77MOpC9rQG-lbSwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...474.499.0.678.3.2.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.6mnG5cjRF0g
+1537560451236	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=fU-lW77MOpC9rQG-lbSwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...474.499.0.678.3.2.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.6mnG5cjRF0g
+1537560451237	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=fU-lW77MOpC9rQG-lbSwDQ&q=TCS&oq=TCS&gs_l=psy-ab.3...474.499.0.678.3.2.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.6mnG5cjRF0g
+1537560451695	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=f0-lW5eTCY6f9QP8grOQBw&start=10&sa=N&biw=1280&bih=873
+1537560452142	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=f0-lW5eTCY6f9QP8grOQBw&start=10&sa=N&biw=1280&bih=873
+1537560455151	Marionette	INFO	Stopped listening on port 33687
+1537562010815	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WJu3GpmQ3rPr"
+1537562014396	Marionette	INFO	Listening on port 46283
+1537562014433	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562014489	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562014558	Marionette	DEBUG	[2147483649] Frame script registered
+1537562014608	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562016262	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562016415	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562017192	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537562046345	Marionette	INFO	Stopped listening on port 46283
+1537562047242	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VelzBV3N7wVn"
+1537562051285	Marionette	INFO	Listening on port 40107
+1537562051429	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562051485	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562051501	Marionette	DEBUG	[2147483649] Frame script registered
+1537562051577	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562052244	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562052385	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562053394	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+[Parent 6017, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537562073052	Marionette	INFO	Stopped listening on port 40107
+1537562095451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ugJNZy18Tsoh"
+1537562098735	Marionette	INFO	Listening on port 46559
+1537562098771	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562098831	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562098888	Marionette	DEBUG	[2147483649] Frame script registered
+1537562098921	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562100657	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562100791	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562101485	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537562106066	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=9FWlW-qFI4PnvgSzq7P4AQ&q=TCS&oq=TCS&gs_l=psy-ab.3...502.509.0.521.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OP2IZwKI06A
+1537562106190	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=9FWlW-qFI4PnvgSzq7P4AQ&q=TCS&oq=TCS&gs_l=psy-ab.3...502.509.0.521.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OP2IZwKI06A
+1537562106191	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=9FWlW-qFI4PnvgSzq7P4AQ&q=TCS&oq=TCS&gs_l=psy-ab.3...502.509.0.521.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.OP2IZwKI06A
+1537562106808	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=9VWlW_zdIsXfvgTZ15GwBA&start=10&sa=N&biw=1280&bih=873
+1537562107167	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=9VWlW_zdIsXfvgTZ15GwBA&start=10&sa=N&biw=1280&bih=873
+1537562110177	Marionette	INFO	Stopped listening on port 46559
+1537562429919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Aldoh5Wl8CWZ"
+1537562433253	Marionette	INFO	Listening on port 37687
+1537562433386	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562433437	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562433438	Marionette	DEBUG	[2147483649] Frame script registered
+1537562433462	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562435150	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562435285	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562435991	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537562440874	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.google.com/search?source=hp&ei=Q1elW5OiAoT0vgTlxqroCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...613.621.0.632.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.f0m2Sw0H4eI
+1537562440980	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.google.com/search?source=hp&ei=Q1elW5OiAoT0vgTlxqroCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...613.621.0.632.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.f0m2Sw0H4eI
+1537562440983	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.google.com/search?source=hp&ei=Q1elW5OiAoT0vgTlxqroCQ&q=TCS&oq=TCS&gs_l=psy-ab.3...613.621.0.632.3.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..3.0.0....0.f0m2Sw0H4eI
+1537562441607	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/search?q=TCS&ei=RFelW7eUCpSSvQS11Zr4Cg&start=10&sa=N&biw=1280&bih=873
+1537562441942	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/search?q=TCS&ei=RFelW7eUCpSSvQS11Zr4Cg&start=10&sa=N&biw=1280&bih=873
+1537562444952	Marionette	INFO	Stopped listening on port 37687
+1537562930048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8NvKVcyYXCiq"
+1537562933262	Marionette	INFO	Listening on port 39043
+1537562933399	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562933453	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562933476	Marionette	DEBUG	[2147483649] Frame script registered
+1537562933542	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562935158	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562935297	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562936009	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537562938324	Marionette	INFO	Stopped listening on port 39043
+1537562939436	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.q1vptKWZy250"
+1537562942655	Marionette	INFO	Listening on port 45033
+1537562942784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537562942840	Marionette	DEBUG	[2147483649] Frame script loaded
+1537562942842	Marionette	DEBUG	[2147483649] Frame script registered
+1537562942861	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537562944451	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537562944586	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537562945296	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537562947686	Marionette	INFO	Stopped listening on port 45033
+1537563567210	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CGaMPLmdhKeU"
+1537563570438	Marionette	INFO	Listening on port 35043
+1537563570561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537563570633	Marionette	DEBUG	[2147483649] Frame script loaded
+1537563570634	Marionette	DEBUG	[2147483649] Frame script registered
+1537563570681	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537563572083	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537563572519	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537563573233	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537563575416	Marionette	INFO	Stopped listening on port 35043
+1537563675909	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cnHJjCIzRqiQ"
+1537563679232	Marionette	INFO	Listening on port 37369
+1537563679361	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537563679419	Marionette	DEBUG	[2147483649] Frame script loaded
+1537563679425	Marionette	DEBUG	[2147483649] Frame script registered
+1537563679490	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537563680427	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537563680591	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537563681324	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537563683540	Marionette	INFO	Stopped listening on port 37369
+1537563727351	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Xl43n4beVjA2"
+1537563730563	Marionette	INFO	Listening on port 43969
+1537563730708	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537563730766	Marionette	DEBUG	[2147483649] Frame script loaded
+1537563730767	Marionette	DEBUG	[2147483649] Frame script registered
+1537563730849	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537563731856	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537563732045	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537563732737	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537563734839	Marionette	INFO	Stopped listening on port 43969
+1537563776613	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fXc3ZJf5f2dg"
+1537563779656	Marionette	INFO	Listening on port 35801
+1537563779816	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537563779877	Marionette	DEBUG	[2147483649] Frame script loaded
+1537563779893	Marionette	DEBUG	[2147483649] Frame script registered
+1537563779934	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537563781019	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537563781180	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537563781898	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537563784048	Marionette	INFO	Stopped listening on port 35801
+1537563785159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8gzZpoO4Wi3m"
+1537563788451	Marionette	INFO	Listening on port 39739
+1537563788489	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537563788549	Marionette	DEBUG	[2147483649] Frame script loaded
+1537563788611	Marionette	DEBUG	[2147483649] Frame script registered
+1537563788644	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537563789795	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537563789955	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537563790677	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537563792885	Marionette	INFO	Stopped listening on port 39739
+1537564040768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.22fAfDq5uRqf"
+1537564043794	Marionette	INFO	Listening on port 36349
+1537564043956	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537564044027	Marionette	DEBUG	[2147483649] Frame script loaded
+1537564044048	Marionette	DEBUG	[2147483649] Frame script registered
+1537564044092	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537564045765	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537564045899	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537564046652	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537564048787	Marionette	INFO	Stopped listening on port 36349
+1537564049883	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3zBbzOcMK7VL"
+1537564052987	Marionette	INFO	Listening on port 33891
+1537564052999	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537564053055	Marionette	DEBUG	[2147483649] Frame script loaded
+1537564053150	Marionette	DEBUG	[2147483649] Frame script registered
+1537564053185	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537564054807	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537564054941	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537564055699	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537564057834	Marionette	INFO	Stopped listening on port 33891
+1537565132900	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DqJah63EcY7R"
+1537565136074	Marionette	INFO	Listening on port 35275
+1537565136121	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565136183	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565136247	Marionette	DEBUG	[2147483649] Frame script registered
+1537565136287	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565137925	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565138091	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537565138834	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537565141153	Marionette	INFO	Stopped listening on port 35275
+1537565142397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.C8eGqiq3Lpqk"
+1537565147048	Marionette	INFO	Listening on port 38661
+1537565147193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565147247	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565147255	Marionette	DEBUG	[2147483649] Frame script registered
+[Parent 19133, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537565163692	Marionette	INFO	Stopped listening on port 38661
+1537565178633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Rfu6x7dLk8dJ"
+1537565181727	Marionette	INFO	Listening on port 43821
+1537565181751	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565181822	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565181908	Marionette	DEBUG	[2147483649] Frame script registered
+1537565181942	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565182701	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565182804	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537565183708	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537565186051	Marionette	INFO	Stopped listening on port 43821
+1537565187472	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4qI0iDqrCSjI"
+1537565190535	Marionette	INFO	Listening on port 42393
+1537565190584	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565190641	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565190715	Marionette	DEBUG	[2147483649] Frame script registered
+1537565191037	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565192333	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565194865	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537565195991	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537565227708	Marionette	DEBUG	[2147483658] Frame script loaded
+1537565227750	Marionette	DEBUG	[2147483658] Frame script registered
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientHandle::Msg_PClientHandleOpConstructor Route error: message sent to unknown actor ID
+
+1537565227776	Marionette	DEBUG	[2147483660] Frame script loaded
+1537565227784	Marionette	DEBUG	[2147483660] Frame script registered
+1537565251650	Marionette	INFO	Stopped listening on port 42393
+1537565466111	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.l84pxN5QMMDI"
+1537565470619	Marionette	INFO	Listening on port 40155
+1537565470627	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565470682	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565470773	Marionette	DEBUG	[2147483649] Frame script registered
+1537565470814	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565472496	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565472635	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537565473330	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537565476644	Marionette	INFO	Stopped listening on port 40155
+1537565477762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EQP6VC85dZ8g"
+1537565480993	Marionette	INFO	Listening on port 36517
+1537565481141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565481204	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565481205	Marionette	DEBUG	[2147483649] Frame script registered
+1537565481547	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565483054	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565484037	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537565485232	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537565523526	Marionette	INFO	Stopped listening on port 36517
+1537565594604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4dEeDAUdhoTA"
+1537565597969	Marionette	INFO	Listening on port 38721
+1537565598105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565598157	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565598158	Marionette	DEBUG	[2147483649] Frame script registered
+1537565598191	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565599844	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565599984	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537565600742	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537565602859	Marionette	INFO	Stopped listening on port 38721
+1537565603877	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8makuEIuV9k7"
+1537565606975	Marionette	INFO	Listening on port 37355
+1537565606998	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537565607058	Marionette	DEBUG	[2147483649] Frame script loaded
+1537565607129	Marionette	DEBUG	[2147483649] Frame script registered
+1537565607384	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537565609597	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537565610322	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537565612056	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537565612681	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.tcs.com/
+1537565613092	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.tcs.com/
+1537565613094	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.tcs.com/
+1537565613547	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483653
+1537565613548	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483655
+1537565613601	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537565613701	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537565614130	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537565614573	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537565614574	Marionette	DEBUG	[2147483649] Received DOM event unload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537565614996	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://in.linkedin.com/company/tata-consultancy-services
+1537565615005	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://in.linkedin.com/company/tata-consultancy-services
+1537565615389	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://in.linkedin.com/company/tata-consultancy-services
+1537565616470	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://in.linkedin.com/company/tata-consultancy-services
+1537565616472	Marionette	DEBUG	[2147483649] Received DOM event unload for https://in.linkedin.com/company/tata-consultancy-services
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 939: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 945: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2239: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2245: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 348: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 354: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3051: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3057: unreachable code after return statement
+1537565617164	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483660
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3385: unreachable code after return statement
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3391: unreachable code after return statement
+1537565618311	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537565621443	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537565622173	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537565622318	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483706
+1537565622320	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483708
+1537565624170	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483710
+1537565624479	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483742
+1537565625639	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483750
+1537565625640	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483760
+1537565625641	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483740
+1537565625641	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483729
+1537565625642	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483744
+1537565625642	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483721
+1537565625872	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483758
+1537565625873	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483754
+1537565626818	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537565626819	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537565630831	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.facebook.com/TataConsultancyServices/
+1537565630921	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483795
+1537565630921	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483793
+1537565630922	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483791
+1537565630922	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483789
+1537565630922	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483787
+1537565630922	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483785
+1537565630923	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483783
+1537565630923	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483781
+1537565630923	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483779
+1537565630924	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483777
+1537565630924	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483775
+1537565630924	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483773
+1537565630925	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483771
+1537565630925	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483769
+1537565630925	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483767
+1537565630926	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483818
+1537565630926	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483820
+1537565630927	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483822
+1537565630927	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483824
+1537565630927	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483826
+1537565630927	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483828
+1537565630928	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483830
+1537565630928	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483832
+1537565630928	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483834
+1537565630928	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483836
+1537565630929	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483838
+1537565630929	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483840
+1537565630929	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483842
+1537565630929	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483844
+1537565630929	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483846
+1537565630930	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483848
+1537565630930	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483850
+1537565630930	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483852
+1537565630930	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483854
+1537565630931	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483765
+1537565630931	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483763
+1537565630931	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483732
+1537565630931	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483690
+1537565630931	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483712
+1537565630932	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483692
+1537565630932	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483694
+1537565630932	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483687
+1537565630932	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483685
+1537565630932	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483696
+1537565630933	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483677
+1537565630933	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483679
+1537565630933	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483665
+1537565630933	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483671
+1537565630934	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483669
+1537565630934	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483681
+1537565630934	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483663
+1537565630935	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483727
+1537565630935	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483747
+1537565630935	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483809
+1537565630935	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483752
+1537565630935	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483805
+1537565630936	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483735
+1537565630936	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483725
+1537565630936	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483738
+1537565630936	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483719
+1537565630937	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483856
+1537565630937	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483807
+1537565630937	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483859
+1537565630937	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483801
+1537565630937	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483675
+1537565630938	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483700
+1537565630938	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483683
+1537565630938	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483861
+1537565630939	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483811
+1537565630939	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483863
+1537565630939	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483803
+1537565634607	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.facebook.com/TataConsultancyServices/
+1537565636215	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.facebook.com/TataConsultancyServices/
+1537565640226	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.facebook.com/TataConsultancyServices/
+1537565640243	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.facebook.com/TataConsultancyServices/
+1537565640712	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483866
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537565641247	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537565642192	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+1537565643608	Marionette	INFO	Stopped listening on port 37355
+1537566878503	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uUsm3SLZ0kTy"
+1537566886489	Marionette	INFO	Listening on port 39493
+1537566886555	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537566886615	Marionette	DEBUG	[2147483649] Frame script loaded
+1537566886677	Marionette	DEBUG	[2147483649] Frame script registered
+1537566886841	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537566887978	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537566888377	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537566889186	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537566891378	Marionette	INFO	Stopped listening on port 39493
+1537566892432	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.d9vVlRLpObsf"
+1537566895524	Marionette	INFO	Listening on port 37133
+1537566895554	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537566895609	Marionette	DEBUG	[2147483649] Frame script loaded
+1537566895679	Marionette	DEBUG	[2147483649] Frame script registered
+1537566896076	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537566897579	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537566899040	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537566900717	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+[Parent 27055, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537566920789	Marionette	INFO	Stopped listening on port 37133
+1537566963639	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ih2KYsu6IK6Q"
+1537566966749	Marionette	INFO	Listening on port 44117
+1537566966892	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537566966960	Marionette	DEBUG	[2147483649] Frame script loaded
+1537566966961	Marionette	DEBUG	[2147483649] Frame script registered
+1537566967030	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537566967813	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537566967929	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537566968826	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537566971200	Marionette	INFO	Stopped listening on port 44117
+1537566972312	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kwOaKanChDg5"
+1537566975367	Marionette	INFO	Listening on port 36677
+1537566975490	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537566975544	Marionette	DEBUG	[2147483649] Frame script loaded
+1537566975546	Marionette	DEBUG	[2147483649] Frame script registered
+1537566975839	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537566977031	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537566978542	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537566980187	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537567007820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.f23LRbmb0AMG"
+1537567011023	Marionette	INFO	Listening on port 39671
+1537567011059	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567011118	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567011167	Marionette	DEBUG	[2147483649] Frame script registered
+1537567011214	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567012944	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567013080	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537567013978	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537567016375	Marionette	INFO	Stopped listening on port 39671
+1537567017293	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tQXPrkdLJTnN"
+1537567020631	Marionette	INFO	Listening on port 33705
+1537567020773	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567020833	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567020845	Marionette	DEBUG	[2147483649] Frame script registered
+1537567021147	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567023379	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567024252	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537567026764	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537567027030	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.tcs.com/
+1537567027173	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.tcs.com/
+1537567027174	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.tcs.com/
+1537567027545	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483653
+1537567027546	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483655
+1537567027572	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567027639	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567028146	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567028597	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567028599	Marionette	DEBUG	[2147483649] Received DOM event unload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567028609	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://in.linkedin.com/company/tata-consultancy-services
+1537567028626	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://in.linkedin.com/company/tata-consultancy-services
+1537567028629	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://in.linkedin.com/company/tata-consultancy-services
+1537567028835	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://in.linkedin.com/company/tata-consultancy-services
+1537567029015	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://in.linkedin.com/company/tata-consultancy-services
+1537567029016	Marionette	DEBUG	[2147483649] Received DOM event unload for https://in.linkedin.com/company/tata-consultancy-services
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 939: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 945: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2239: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2245: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 348: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 354: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3051: unreachable code after return statement
+JavaScript warning: https://stat3.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3057: unreachable code after return statement
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3385: unreachable code after return statement
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3391: unreachable code after return statement
+1537567030599	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567037788	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567038285	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567039922	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567039923	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567042905	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.facebook.com/TataConsultancyServices/
+1537567042968	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483706
+1537567042968	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483688
+1537567042969	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483703
+1537567042969	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483690
+1537567042970	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483692
+1537567042970	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483685
+1537567042971	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483683
+1537567042972	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483665
+1537567042972	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483675
+1537567042972	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483677
+1537567042973	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483663
+1537567042973	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483669
+1537567042974	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483667
+1537567042974	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483679
+1537567042974	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483661
+1537567042975	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483673
+1537567042975	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483697
+1537567042976	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483681
+1537567046124	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.facebook.com/TataConsultancyServices/
+1537567047216	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.facebook.com/TataConsultancyServices/
+1537567047350	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.facebook.com/TataConsultancyServices/
+1537567047365	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.facebook.com/TataConsultancyServices/
+1537567047453	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483710
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537567048011	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537567048942	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+1537567050513	Marionette	INFO	Stopped listening on port 33705
+1537567223748	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hRvR7qYnr6eU"
+1537567229381	Marionette	INFO	Listening on port 33325
+1537567229483	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567229538	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567229608	Marionette	DEBUG	[2147483649] Frame script registered
+1537567229645	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567230447	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567230784	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537567231635	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537567233830	Marionette	INFO	Stopped listening on port 33325
+1537567234737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vax9FodSkC7T"
+1537567237903	Marionette	INFO	Listening on port 37519
+1537567237952	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567238007	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567238101	Marionette	DEBUG	[2147483649] Frame script registered
+1537567238375	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567239658	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567241758	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537567242835	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+[Parent 32758, Gecko_IOThread] WARNING: pipe error (60): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537567315913	Marionette	INFO	Stopped listening on port 37519
+1537567336254	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jqglUiZ2YszE"
+1537567339360	Marionette	INFO	Listening on port 43831
+1537567339500	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567339576	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567339590	Marionette	DEBUG	[2147483649] Frame script registered
+1537567339643	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567341467	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567341600	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537567342329	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537567344364	Marionette	INFO	Stopped listening on port 43831
+1537567345386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oR1DflnTZhuD"
+1537567348696	Marionette	INFO	Listening on port 43239
+1537567348860	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567348919	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567348935	Marionette	DEBUG	[2147483649] Frame script registered
+1537567349327	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567351418	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567352146	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537567354893	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+[Parent 2514, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537567370575	Marionette	INFO	Stopped listening on port 43239
+[Parent 28868, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1537567374484	Marionette	INFO	Stopped listening on port 36677
+1537567497638	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yZzOEz0yRt8m"
+1537567500701	Marionette	INFO	Listening on port 42297
+1537567500835	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567500909	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567500936	Marionette	DEBUG	[2147483649] Frame script registered
+1537567500989	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567501750	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567501871	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.google.com/?gws_rd=ssl
+1537567502744	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.google.com/?gws_rd=ssl
+1537567505232	Marionette	INFO	Stopped listening on port 42297
+1537567506247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kbIIiCZCqEBH"
+1537567509248	Marionette	INFO	Listening on port 34687
+1537567509260	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537567509334	Marionette	DEBUG	[2147483649] Frame script loaded
+1537567509428	Marionette	DEBUG	[2147483649] Frame script registered
+1537567509710	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1537567511060	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1537567511755	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.tcs.com/
+1537567514563	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.tcs.com/
+1537567514875	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.tcs.com/
+1537567515011	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.tcs.com/
+1537567515012	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.tcs.com/
+1537567515344	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483653
+1537567515345	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483655
+1537567515360	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567515429	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567516601	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567517074	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567517075	Marionette	DEBUG	[2147483649] Received DOM event unload for https://en.wikipedia.org/wiki/Tata_Consultancy_Services
+1537567517086	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://in.linkedin.com/company/tata-consultancy-services
+1537567517101	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://in.linkedin.com/company/tata-consultancy-services
+1537567517103	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://in.linkedin.com/company/tata-consultancy-services
+1537567517291	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://in.linkedin.com/company/tata-consultancy-services
+1537567518665	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://in.linkedin.com/company/tata-consultancy-services
+1537567518666	Marionette	DEBUG	[2147483649] Received DOM event unload for https://in.linkedin.com/company/tata-consultancy-services
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 939: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 945: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2239: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_common.js?ver=0.2, line 2245: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 348: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 354: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3051: unreachable code after return statement
+JavaScript warning: https://stat1.moneycontrol.com/mcjs/markets/https_market_hp12.min.js?v=0.2, line 3057: unreachable code after return statement
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3385: unreachable code after return statement
+JavaScript warning: https://stat4.moneycontrol.com/mcjs/mcradar/market_radar_aws.js?ver=20180820, line 3391: unreachable code after return statement
+1537567521221	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567524967	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567538877	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567538920	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483779
+1537567538920	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483781
+1537567538921	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483783
+1537567538921	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483785
+1537567540977	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567540983	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS
+1537567541964	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.facebook.com/TataConsultancyServices/
+1537567542004	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483722
+1537567542004	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483691
+1537567542005	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483727
+1537567542006	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483729
+1537567542006	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483731
+1537567542006	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483733
+1537567542007	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483735
+1537567542007	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483707
+1537567542007	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483693
+1537567542008	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483695
+1537567542008	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483688
+1537567542008	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483686
+1537567542009	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483668
+1537567542009	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483678
+1537567542010	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483680
+1537567542010	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483665
+1537567542010	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483672
+1537567542011	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483763
+1537567542011	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483769
+1537567542011	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483767
+1537567542012	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483772
+1537567542012	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483746
+1537567542012	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483724
+1537567542013	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483737
+1537567542013	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483749
+1537567542013	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483670
+1537567542013	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483682
+1537567542013	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483661
+1537567542014	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483718
+1537567542014	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483756
+1537567542014	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483788
+1537567542014	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483739
+1537567542014	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483716
+1537567542015	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483751
+1537567542015	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483676
+1537567542015	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483714
+1537567542015	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483760
+1537567542015	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483744
+1537567542016	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483754
+1537567542016	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483700
+1537567542016	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483663
+1537567542016	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483684
+1537567542016	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483711
+1537567544676	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.facebook.com/TataConsultancyServices/
+1537567545783	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.facebook.com/TataConsultancyServices/
+1537567545928	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.facebook.com/TataConsultancyServices/
+1537567545943	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.facebook.com/TataConsultancyServices/
+1537567545996	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483793
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537567546355	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+JavaScript warning: https://js.etimg.com/js_common/v-667,minify-1.cms, line 53: unreachable code after return statement
+1537567547077	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://economictimes.indiatimes.com/tata-consultancy-services-ltd/stocks/companyid-8345.cms
+1537567548607	Marionette	INFO	Stopped listening on port 34687

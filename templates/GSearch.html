@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VCG Google Search Tool</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            // Use a "/test" namespace.
+            // An application can open a connection on multiple namespaces, and
+            // Socket.IO will multiplex all those connections on a single
+            // physical channel. If you don't care about multiple channels, you
+            // can set the namespace to an empty string.
+
+
+
+
+
+
+      $('#clear').click(function() {
+        location.reload();
+
+
+      });
+      namespace = '/test';
+            // Connect to the Socket.IO server.
+            // The connection URL has the following format:
+            //     http[s]://<domain>:<port>[/<namespace>]
+    var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+
+            //socket.on('my_response_dass', function(msg) {
+            //    $('#log').append('<br>' + $('<div/>').text('Received #' + msg.count + ': ' + msg.data).html());
+            //});
+      // socket.on('my_bo', function(msg) {
+      //           $('#backofficedata').append('<option>' + $('<div/>').text('Account/CIN : ' + msg.CIN).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('SortCode : ' + $('#SortCode').val()).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Name : ' + msg.Name).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Account/CIN : ' + msg.CIN).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence1 : ' + msg.Tax_Residence1).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence2 : ' + msg.Tax_Residence2).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence3 : ' + msg.Tax_Residence3).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence4 : ' + msg.Tax_Residence4).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence5 : ' + msg.Tax_Residence5).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence6 : ' + msg.Tax_Residence6).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence7 : ' + msg.Tax_Residence7).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence8 : ' + msg.Tax_Residence8).html());
+      //   $('#backofficedata').append('<option>' + $('<div/>').text('Tax_Residence9 : ' + msg.Tax_Residence9).html());
+      //
+      //       });
+
+      // socket.on('img_result', function(msg) {
+      // var data = String(msg.img_resultss);
+      // console.log('message form backend ' + data);
+      //
+      // var arr = data.split(',');
+      //   $.each(arr, function(i, field){
+      //     $("#resultselect").append('<option>' + $('<div/>').text(String(field)).html());
+      //     });
+      //
+      //           console.log('message form backend ' + msg);
+      //       });
+
+
+
+      //$('#resultselect').on('change', function() {
+      //	alert( this.value );
+      //});
+
+            // $('form#emit').submit(function(event) {
+            //     socket.emit('my_event', {data: $('#emit_data').val()});
+            //     return false;
+            // });
+
+      $('form#accform').submit(function(event) {
+                socket.emit('my_event', {data: 'Hi dass'});
+                return false;
+            });
+
+
+        });
+    </script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <button type="button" class="btn btn-success">Success</button>
+      {% block container %}{% endblock %}
+    </div>
+
+    <form id="accform" method="POST" action='#'>
+      <fieldset>
+
+
+        <div class="container">
+    <div class="card mb-3">
+    <h3 class="card-header text-primary">Enter the Account details</h3>
+
+
+    <div class="row justify-content-md-center">
+
+      <div class="col col-lg-3">
+      <div class="form-group">
+        <label class="text-primary" for="exampleInputEmail1">Account Number</label>
+        <input type="text" class="form-control" id="accountnumber" aria-describedby="accountnumber" placeholder="Enter Account Number">
+        <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+      </div>
+      </div>
+      <div class="col col-lg-3">
+        <div class="form-group">
+          <label class="text-primary" for="SortCode">SortCode</label>
+          <input type="text" class="form-control" id="SortCode" placeholder="Enter SortCode">
+        </div>
+      </div>
+
+      <div class="col col-lg-3">
+        <div class="form-group">
+          <label class="text-primary" for="cinnumber">CIN</label>
+          <input type="text" class="form-control" id="cinnumber" placeholder="Enter CIN Number">
+        </div>
+      </div>
+
+
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+
+       <div class="row justify-content-md-center">
+
+  <div class="col col-lg-2">
+
+          <label class="text-primary" class="form-check-label">
+            <input class="form-check-input" id="checkboxBO" type="checkbox" value="false" checked="false">
+            BackOffice
+          </label>
+        </div>
+
+      <div  class="col col-lg-2">
+          <label class="text-primary" class="form-check-label">
+            <input class="form-check-input" id="checkboxnanpa" type="checkbox" value="true" checked="true">
+            Nanpa
+          </label>
+        </div>
+
+          <div class="col col-lg-2">
+          <label class="text-primary" class="form-check-label">
+            <input class="form-check-input" id="checkboxtin" type="checkbox" value="true" checked="true">
+            TIN
+          </label>
+        </div>
+
+          <div class="col col-lg-2">
+          <label class="text-primary" class="form-check-label">
+            <input class="form-check-input" id="checkboximage" type="checkbox" value="true" checked="true">
+            Image and Workflow
+          </label>
+        </div>
+
+      </div>
+  </div>
+  </div>
+      <div class="card">
+    <div class="card-body">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+      <div class="col col-lg-2">
+      <button type="button" id="clear" class="btn btn-primary">Clear</button>
+      </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+<!--
+  <button type="button" id="testing" class="btn btn-primary" onclick="mycode(this)">testingr</button>
+
+  <script type="text/javascript">
+  // set interval
+  var tid = setInterval(mycode, 2000);
+  function mycode() {
+    // do some stuff...
+    // no need to recall the function (it's an interval, it'll loop forever)
+        $("#testing").html('Save');
+  }
+  function abortTimer() { // to be called when you want to stop the timer
+    clearInterval(tid);
+  } -->
+
+
+
+
+  <!-- </script> -->
+
+
+      </fieldset>
+    </form>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="{{ url_for('static', filename='jquery-3.3.1.js') }}"></script> -->
+    <!-- <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> -->
+  </body>
+</html>
