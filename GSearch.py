@@ -17,6 +17,7 @@ import csv
 import subprocess
 import getpass
 import ctypes
+from shutil import copyfile
 from PIL import Image
 from numpy import genfromtxt
 from sklearn import datasets, svm, metrics
@@ -39,6 +40,9 @@ companyname = ""
 googlesearchpage = ""
 webflag = 0
 otherwebvar = ""
+#live path
+#filepathtemp = '\\\\fs12edx\\grpareas\\os\\Data\\pythonsearch\\'
+filepathtemp = 'X:\\Coding\\Python\\pythonsearch\\'
 
 app = Flask(__name__)
 
@@ -61,14 +65,14 @@ tempsplit = ""
 def index():
     return render_template('GSearch.html', async_mode=socketio.async_mode)
 
-@socketio.on('my_event', namespace='/test')
+@socketio.on('click_submit', namespace='/test')
 def test_message(message):
    global googlesearchpage
    global companyname
    global webflag
-   print("my-event trigger")
+   print("Click submit event trigger")
    companyname = str(message['companyname'])
-   googlesearchpage = str(message['googlesearchpage'])
+   #googlesearchpage = str(message['googlesearchpage'])
 
    print(message)
    mainprogram()
@@ -85,6 +89,7 @@ def test_message(message):
 @socketio.on('extract_button', namespace='/test')
 def test_extract_button(message):
    global otherwebvar
+   global filepathtemp
    if os.path.exists(str(getpass.getuser()).lower() + ".xlsm"):
       print("Open Excel to extract otherwebsite result")
       xl=win32com.client.Dispatch("Excel.Application")
@@ -98,14 +103,14 @@ def test_extract_button(message):
       
 #emit('my_response_dass',
 #     {'tabledata': 'sss', 'Name': 'sssssss'})
-   conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+   conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
    c = conn.cursor()
    c.execute('select * from Master where Status = "Extracted"')
    rows = c.fetchall()
    conn.close()
    tempval = ""
    for row in rows:
-      tempval = tempval + str(row[0]) + "<!>" + str(row[10]) + "<!>" + str(row[8]) + "<!>" + str(row[2]) + "<!>" + str(row[15]) + "<!>" + str(row[7]) + "<`>"
+      tempval = tempval + str(row[0]) + "<!>" + str(row[10]) + "<!>" + str(row[6]) + "<!>" + str(row[8]) + "<!>" + str(row[2]) + "<!>" + str(row[15]) + "<!>" + str(row[7]) + "<`>"
    print("extract_button : " + tempval)  
    emit('my_response_dass',
         {'resultdata': str(tempval).replace('\n', r'<p></p>'), 'otherwebvar': str(otherwebvar).replace('\n', r'<p></p>') })
@@ -122,12 +127,13 @@ def test_extract_button(message):
 @socketio.on('testmy_event', namespace='/test')
 def test_message_timmer(message):
    global webflag
+   global filepathtemp
    if webflag == 1:
       webflag = 0
       
       #emit('my_response_dass',
       #     {'tabledata': 'sss', 'Name': 'sssssss'})
-      conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+      conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
       c = conn.cursor()
       c.execute('select * from Master where Status = "Extracted"')
       rows = c.fetchall()
@@ -135,7 +141,7 @@ def test_message_timmer(message):
       tempval = ""
       for row in rows:
          
-         tempval = tempval + str(row[0]) + "<!>" + str(row[10]) + "<!>" + str(row[8]) + "<!>" + str(row[2]) + "<!>" + str(row[15]) + "<!>" + str(row[7]) + "<`>"
+         tempval = tempval + str(row[0]) + "<!>" + str(row[10]) + "<!>" + str(row[6]) + "<!>" + str(row[8]) + "<!>" + str(row[2]) + "<!>" + str(row[15]) + "<!>" + str(row[7]) + "<!>" + str(row[10]) + "<`>"
       print("Timmer called : " + tempval)  
       emit('my_response_dass',
            {'resultdata': str(tempval).replace('\n', r'<p></p>'), 'otherwebvar': str(otherwebvar).replace('\n', r'<p></p>') })
@@ -149,13 +155,14 @@ def test_message_timmer(message):
 
 @socketio.on('row_Index', namespace='/test')
 def row_index_timmer(message):
-   conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+   global filepathtemp
+   conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
    c = conn.cursor()
    c.execute('select * from Master where Status = "Extracted"')
    rows = c.fetchall()
    conn.close()
    print(str(message))
-   row = rows[int(message)]
+   row = rows[int(message) -1]
    print("Timmer called : " + str(row))  
    emit('my_response_rowclick',
         {'resultdata': str(row[14]).replace('\n', r'<p></p>'), 'AInews': str(row[13]).replace('\n', r'<p></p>')})
@@ -166,8 +173,9 @@ def row_index_timmer(message):
 
 
 def removefile():
+    global filepathtemp
     for item in os.listdir():
-        if item.startswith(getpass.getuser()) and item.endswith(".txt"):
+        if item.startswith(filepathtemp + getpass.getuser()) and item.endswith(".txt"):
            print("deleting file " + item)
            os.remove(item)
 
@@ -175,20 +183,24 @@ def removefile():
 def mainprogram():
    global googlesearchpage
    global companyname
+   global filepathtemp
    removefile()
-   if os.path.exists(str(getpass.getuser()).lower() + ".xlsm"):
+
+   
+      
+   if os.path.exists(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"):
       print("Main Program")
       xl=win32com.client.Dispatch("Excel.Application")
-      xl.Workbooks.Open(os.path.abspath(str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=0)
+      xl.Workbooks.Open(os.path.abspath(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=0)
       ws = xl.Worksheets("SystemRef")
    else:
       print("Unable to open the excel")
-   ws.Range("B7").Value = str(companyname)
-   ws.Range("B1").Value = str(googlesearchpage)
+   ws.Range("C7").Value = str(companyname)
+   #ws.Range("B1").Value = str(googlesearchpage)
    xl.DisplayAlerts = False 
    xl.Application.Save() # if you want to save then uncomment this line and change delete the ", ReadOnly=1" part from the open function.
    xl.DisplayAlerts = True
-   xl.Application.Run(str(getpass.getuser()).lower() + ".xlsm!ModGoogleSearch.Google_search")
+   xl.Application.Run(filepathtemp + str(getpass.getuser()).lower() + ".xlsm!ModGoogleSearch.Google_search")
    xl.DisplayAlerts = False 
    xl.Application.Save() # if you want to save then uncomment this line and change delete the ", ReadOnly=1" part from the open function.
    xl.DisplayAlerts = True
@@ -224,12 +236,13 @@ def mainprogram():
    
 def otherwebsites():
    global otherwebvar
-   if os.path.exists(str(getpass.getuser()).lower() + ".xlsm"):
+   global filepathtemp
+   if os.path.exists(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"):
       print("Other website search start")
       xl=win32com.client.Dispatch("Excel.Application")
-      xl.Workbooks.Open(os.path.abspath(str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=0)
+      xl.Workbooks.Open(os.path.abspath(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=0)
       ws = xl.Worksheets("OtherWeb")
-      xl.Application.Run(str(getpass.getuser()).lower() + ".xlsm!ModOtherWeb.OtherWeb")
+      xl.Application.Run(filepathtemp + str(getpass.getuser()).lower() + ".xlsm!ModOtherWeb.OtherWeb")
       print("Other website macro completed")
       xl.DisplayAlerts = False 
       xl.Application.Save() # if you want to save then uncomment this line and change delete the ", ReadOnly=1" part from the open function.
@@ -249,18 +262,19 @@ def otherwebsites():
 
 
 def exceltodb():
-    conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+    global filepathtemp
+    conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
     c = conn.cursor()
     c.execute('DELETE FROM Master')
     conn.commit()
     conn.close()
 
-    if os.path.exists(str(getpass.getuser()).lower() + ".xlsm"):
+    if os.path.exists(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"):
         print("xl object")
         xl=win32com.client.Dispatch("Excel.Application")
-        xl.Workbooks.Open(os.path.abspath(str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=1)
+        xl.Workbooks.Open(os.path.abspath(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=1)
         ws = xl.Worksheets("DB")
-        conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+        conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
         for rc in range(2, 65000):
             if str(ws.Cells(rc ,1).Value) != "None":
                
@@ -297,6 +311,7 @@ def exceltodb():
 
 
 def google_indi():
+    global filepathtemp
     #pythoncom.CoInitialize()
     tempurl = ""
     rowcount = 0
@@ -304,7 +319,7 @@ def google_indi():
     #ie.Visible = 1 #make this 0, if you want to hide IE window
 
 
-    conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+    conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
     c = conn.cursor()
     c.execute('select * from Master where Status = "YettoExtract"')
     rows = c.fetchall()
@@ -313,7 +328,7 @@ def google_indi():
 
     for i in range(rowcount):
         try:
-            conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+            conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
             c = conn.cursor()
             c.execute('select * from Master where Status = "YettoExtract"')
             rows = c.fetchall()
@@ -346,7 +361,7 @@ def google_indi():
 ##                    text = str(ie.Document.body.outerHTML)
                     #fnamet = str(rows1 + ".txt")
                     print("Reading file")
-                    file = open(rows1[0] + ".txt", encoding="utf8")
+                    file = open(filepathtemp + rows1[0] + ".txt", encoding="utf8")
                     contemp = file.read()
                     file.close()
                     soup = BeautifulSoup(contemp, 'html.parser')
@@ -378,15 +393,15 @@ def google_indi():
                         #print(sentence)
                         ss = sid.polarity_scores(sentence)
                         if ss['neg'] > 0:
-                            AIscore = AIscore + int(ss['neg']*100)
-                            strsen = strsen + "AI Score = " + str(ss['neg'] * 100) + " ==> " + sentence + '\n'
+                            AIscore = AIscore + int(ss['neg']*10)
+                            strsen = strsen + "AI Score = " + str(ss['neg'] * 10) + " ==> " + sentence + '\n'
                             strsentag = strsentag + '<b class="text-danger">' + sentence + '(AI Score = ' + str(ss['neg']) + ')</b>' + '\n'
 
                             #print("AI Score = " + str(ss['neg']) + " ==> " + sentence)
                         else:
                             strsentag = strsentag + sentence + '\n'
                     
-                    conn = sqlite3.connect(str(getpass.getuser()).lower() + '.db')
+                    conn = sqlite3.connect(str(filepathtemp + getpass.getuser()).lower() + '.db')
                     c = conn.cursor()
                     print("rawtext to db")
                     c.execute("update Master set rawtext = '" + str(tempstr) + "', rawtexttag = '" + str(strsentag) + "', negtext = '" + str(strsen) + "', AIScore = '" + str(AIscore) + "' where ID = '" + str(rows1[0]) + "'")
@@ -411,7 +426,20 @@ def google_indi():
 
          
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+   
+   if os.path.exists(filepathtemp + getpass.getuser() + ".xlsm"):
+      os.remove(filepathtemp + getpass.getuser() + ".xlsm")
+      copyfile(filepathtemp + "AI_AML_Template.xlsm", filepathtemp + getpass.getuser() + ".xlsm")
+   else:
+      copyfile(filepathtemp + "AI_AML_Template.xlsm", filepathtemp + getpass.getuser() + ".xlsm")
+
+   if os.path.exists(filepathtemp + getpass.getuser() + ".db"):
+      os.remove(filepathtemp + getpass.getuser() + ".db")
+      copyfile(filepathtemp + "Template.db", filepathtemp + getpass.getuser() + ".db")
+   else:
+      copyfile(filepathtemp + "Template.db", filepathtemp + getpass.getuser() + ".db")
+      
+   socketio.run(app, debug=True)
 
 
 
