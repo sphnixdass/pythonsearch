@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
+
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/> -->
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
@@ -23,8 +26,8 @@
   <script type="text/javascript" language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
   <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
-
-
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 
 
 
@@ -40,35 +43,6 @@
       // Socket.IO will multiplex all those connections on a single
       // physical channel. If you don't care about multiple channels, you
       // can set the namespace to an empty string.
-
-
-
-
-
-
-      $('#clear').click(function () {
-        location.reload();
-      });
-//google add
-      $('#Addbutton').click(function () {
-        $('#addquery').append('<option>' + $('<div/>').text($('#companyname').val() + '<:>' + $('#googlesearchpage').val() + '<:>' + $('#checkboxkey').val() + '<:>GoogleSearch' + '<:>ProfileWebsite' + $('#ProfileSearchCheckBox').is(':checked') + '<:>WorldCheck' + $('#WorldCheckBox').is(':checked')).html());
-      });
-
-//profile add
-      $('#profileAdd').click(function () {
-        $('#addquery').append('<option>' + $('<div/>').text($('#profilecompanyname').val() + ' ' + $('#profileAddresssearch').val() + '<:>' + $('#googlesearchpage').val() + '<:>' + $('#checkboxkey').val() + '<:>ProfileSearch' + '<:>ProfileWebsite' + $('#ProfileSearchCheckBox').is(':checked') + '<:>WorldCheck' + $('#WorldCheckBox').is(':checked')).html());
-        //alert($('#GoogleSearchCheckBox').is(':checked'));
-      });
-
-//remove button
-      $('#removebutton').click(function () {
-        $("#addquery option:selected").remove();
-      });
-
-
-
-
-
       namespace = '/test';
       // Connect to the Socket.IO server.
       // The connection URL has the following format:
@@ -120,13 +94,13 @@
 
 
       var t = $('#outputtable').DataTable();
-
+      var wt = $('#wtable').DataTable();
 
 
       socket.on('my_response_dass', function (msg) {
 
         //$('#outputtable').find("tr:gt(0)").remove();
-
+        //alert(msg.worldchecktab);
         t.clear();
 
         var data = msg.resultdata;
@@ -144,7 +118,7 @@
           arr2[3],
           parseInt(arr2[4]),
           arr2[5],
-          arr2[6]
+          parseInt(arr2[6])
           ]).draw(true);
 
           t.column(2, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
@@ -152,23 +126,45 @@
           });
 
           t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
-           cell.innerHTML = '<input type="checkbox" name="' + temparrch[i+1] + '" value="' + temparrch[i+1] + '">' + temparrch[i+1];
+           cell.innerHTML = '<input type="checkbox" id="' + temparrch[i+1] + '" value="' + temparrch[i+1] + '">' + temparrch[i+1];
           });
 
-          // t.on('order.dt search.dt', function () {
-          //   t.column(1, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
-          //     cell.innerHTML = '<a href="#">' + arr2[0] + '</a>';
-          //   });
-          // }).draw();
-
-
-          //t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
-          //  cell.innerHTML = '<a href="#">' + arr2[0] + '</a>';
-          //});
 
         });
 
 
+//World Check table
+
+        wt.clear();
+        var tempwcarr = [""];
+
+        var data = msg.worldchecktab;
+        //alert(data);
+        var temparr = [""];
+        var temparrch = [""];
+        var arr = data.split("<`>");
+        $.each(arr, function (index, value) {
+          var arr2 = value.split("<!>");
+          tempwcarr.push(arr2[5]);
+          wt.row.add([arr2[0],
+          arr2[1],
+          arr2[2],
+          arr2[3],
+          arr2[4]
+
+          ]).draw(true);
+
+          });
+
+        $('#wtable tbody').on('click', 'tr', function () {
+
+          var data = wt.row(this).data();
+            //alert(data[0].toString());
+            //alert(tempwcarr[parseInt(data[0].toString())].toString());
+          //console.log(t.cell(this));
+          $("#worldcheckresult").html(tempwcarr[parseInt(data[0].toString())].toString());
+          $("#myModal").modal();
+        });
 
 
         //alert("hi");
@@ -179,60 +175,44 @@
         //$('#outputtable tr:last').remove();
 
         $('#outputtable tbody').on('click', 'tr', function () {
+
           var data = t.row(this).data();
+
+          //console.log(t.cell(this));
           tempsl = data[0];
           tempval = data[2];
-
-          //alert('You clicked on ' + data[0] + '\'s row' + data.index);
-
-
-          //var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
-
-          //alert("Row index is: " + x.rowIndex);
-          //var num = x.rowIndex;
           socket.emit('row_Index', data[0].toString());
-          //console.log(x);
-
-
         });
 
 
       });
 
+      $('#btnReport').click(function(){
+        var selectedcell = "";
+          t.rows().eq(0).each( function ( index ) {
+            var row = t.row( index );
+            var data = row.data();
+                var rowNode = row.node();
+                $(rowNode).find("td:eq(0)").each(function (){
+                    //console.log($(this).context.innerHTML);
+                     var cellData = $(this).text();
+                     var dcel = document.getElementById(cellData);
+                     if(dcel.checked == true)
+                     {
+                       //alert(dcel.checked);
+                       selectedcell = selectedcell + cellData + "<,>";
+                     }
+                     });
+          });
+
+          if (selectedcell != "") {
+            socket.emit('GenerateReport', { ReportData: selectedcell});
+
+          alert(selectedcell);
+          }
 
 
-			/*
-            socket.on('my_response_dass', function(msg) {
-
-				//var data = "dass <!> chris <`> caleb <!> praveen";
-				//alert(msg);
-				$('#outputtable').find("tr:gt(0)").remove();
-
-				var data = msg.resultdata;
-				//alert(data);
-				var arr = data.split("<`>");
-				$.each( arr, function( index, value ) {
-					var arr2 = value.split("<!>");
-					//alert(arr2[0]);
-					$('#outputtable tr:last').DataTable('<tr class="table-success clickable-row" onclick="rowclick(this)"><th scope="row">' + arr2[0] + '</th><td>' + arr2[1] + '</td><td><a href="' + arr2[2] + '" target="_blank">' + arr2[2] + '</a>' + '</td><td>' + arr2[3] + '</td><td>'  + parseInt(arr2[4]) + '</td><td>'  + arr2[5] + '</td><td>' + arr2[6] + '</td></tr>');
-
-
-					//	$('#outputtable tr:last').after('<tr class="table-success clickable-row" onclick="rowclick(this)"><th scope="row">' + arr2[0] + '</th><td>' + arr2[1] + '</td><td><a href="' + arr2[2] + '" target="_blank">' + arr2[2] + '</a>' + '</td><td>' + arr2[3] + '</td><td>'  + parseInt(arr2[4]) + '</td><td>'  + arr2[5] + '</td><td>' + arr2[6] + '</td></tr>');
-
-
-				});
-
-
-			 $( "#aiotherwebsites" ).html( msg.otherwebvar);
-
-			 $('#outputtable tr:last').remove();
-
-
-
-            });
-			*/
-      //$('#outputtable').DataTable();
-
+      });
 
       $('form#accform').submit(function (event) {
 
@@ -248,7 +228,7 @@
       });
 
       socket.on('my_response_rowclick', function (msg) {
-        alert("Result has been updated");
+        //alert("Result has been updated");
         $("#output").html('<p style="color:blue;">' + tempsl + ' : ' + tempval + '</p><p></p>' +  msg.resultdata);
         $("#aicompletenews").html('<p style="color:blue;">' + tempsl + ' : ' + tempval + '</p><p></p>' + msg.AInews);
         //$("#aiotherwebsites").html(msg.otherwebvar);
@@ -265,6 +245,26 @@
     $( "#addquery" ).change(function() {
       var res = this.value.split("<:>");
       t.search(res[0]).draw();
+    });
+
+    $('#clear').click(function () {
+      location.reload();
+    });
+//google add
+    $('#Addbutton').click(function () {
+      $('#addquery').append('<option>' + $('<div/>').text($('#companyname').val() + '<:>' + $('#googlesearchpage').val() + '<:>' + $('#checkboxkey').val() + '<:>GoogleSearch' + '<:>ProfileWebsite' + $('#ProfileSearchCheckBox').is(':checked') + '<:>WorldCheck' + $('#WorldCheckBox').is(':checked') + '<:>AISearch' + $('#AINeg').is(':checked')).html());
+    });
+
+//profile add
+    $('#profileAdd').click(function () {
+      $('#addquery').append('<option>' + $('<div/>').text($('#profilecompanyname').val() + ' ' + $('#profileAddresssearch').val() + '<:>' + $('#googlesearchpage').val() + '<:>' + $('#checkboxkey').val() + '<:>ProfileSearch' + '<:>ProfileWebsite' + $('#ProfileSearchCheckBox').is(':checked') + '<:>WorldCheck' + $('#WorldCheckBox').is(':checked') + '<:>AISearch' + $('#AINeg').is(':checked')).html());
+      //alert($('#GoogleSearchCheckBox').is(':checked'));
+    });
+
+//remove button
+    $('#removebutton').click(function () {
+      $("#addquery option:selected").remove();
+      t.search("").draw();
     });
 
 
@@ -294,8 +294,8 @@
 </head>
 
 
-
-<body style="Background:#d8f4ff">
+<!--<body style="Background:#d8f4ff">-->
+<body style="Background:#bdf4f9">
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -464,6 +464,14 @@
                           </div>
                         </div>
 
+                        <div class="col col-lg-2">
+                        <div class="checkbox">
+                            <label class="text-primary">
+                              <input type="checkbox" id="AINeg" checked>Negative Search
+                            </label>
+                            </div>
+                          </div>
+
                 </div>
               </div>
             </div>
@@ -483,6 +491,10 @@
 
                 <div class="col col-lg-2">
                   <button type="button" id="btnExtract" class="btn btn-primary">Show Result</button>
+                </div>
+
+                <div class="col col-lg-2">
+                  <button type="button" id="btnReport" class="btn btn-primary">Generate Report</button>
                 </div>
 
               </div>
@@ -532,7 +544,7 @@
                       <th scope="col">AI Score
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                       </th>
-                      <th scope="col">Match Score</th>
+                      <th scope="col">Match Score %</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -569,12 +581,65 @@
                   <p id="aiotherwebsites" class="card-text text-success"></p>
                 </div>
               </div>
-              <div id="menu4" class="tab-pane fade" style="background:#fff; padding: 35px;">
-                <div class="card-body">
-                  <p id="worldchecktab" class="card-text text-success"></p>
+
+<div id="menu4" class="tab-pane fade" style="background:#fff; padding: 35px;">
+
+              <div style="width:auto; border:1px solid green; padding:3px; padding: 5px;" id="menu4a" class="tab-pane fade in active">
+                <!--h3>HOME</h3-->
+
+                <table id="wtable" class="table table-hover table-striped table-bordered table-condensed">
+                  <thead>
+                    <tr>
+                      <th scope="col">Sl</th>
+                      <th scope="col">Company Name
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                      </th>
+                      <th scope="col">Report</th>
+                      <th scope="col">Sub</th>
+                      <th scope="col">MatchScore
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                      </th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!--tr class="table-active">
+      <th scope="row">Active</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr-->
+
+                  </tbody>
+                </table>
+
+              </div>
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Agile Automation</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p id=worldcheckresult>Result</p>
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
               </div>
 
+
+
+
+</div>
 
 
             </div>
@@ -605,8 +670,8 @@
 
           namespace = '/test';
           var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
-
-          //alert("Row index is: " + x.rowIndex);
+          alert("hi");
+          alert("Row index is: " + x.columnIndex);
           var num = x.rowIndex;
           socket.emit('row_Index', num.toString());
           console.log(x);

@@ -133,10 +133,15 @@ def test_extract_button(message):
    rows = c.fetchall()
    conn.close()
    worldchecktab = ""
+   print("worldchecktab ===================")
+   rcw = 1
    for row in rows:
-       worldchecktab = worldchecktab + '<h3>' + str(row[0]) + '</h3>' + str(row[1]).replace('<body', r'<p')
+       worldchecktab = worldchecktab + str(rcw) + "<!>" + str(row[0]) + "<!>" +  str(row[2]) + "<!>"  + str(row[3]) + "<!>" + str(row[5]) + "<!>" + str(row[1]).replace('<body', r'<p') + "<`>"
+       rcw = rcw + 1
 
-   print(worldchecktab)
+   #print(worldchecktab)
+   worldchecktab = worldchecktab[:-3]
+   print("Extract button ============")
 
    emit('my_response_dass',
         {'resultdata': str(tempval).replace('\n', r'<p></p>'), 'otherwebvar': str(otherwebresult).replace('\n', r'<p></p>'), 'worldchecktab' : str(worldchecktab).replace('\n', r'<p></p>')})
@@ -183,6 +188,7 @@ def test_message_timmer(message):
           worldchecktab = worldchecktab + '<h3>' + str(row[0]) + '</h3>' + str(row[1]).replace('<body', r'<p')
 
       print(worldchecktab)
+      print("testmy_event ========")
       emit('my_response_dass',
            {'resultdata': str(tempval).replace('\n', r'<p></p>'), 'otherwebvar': str(otherwebresult).replace('\n', r'<p></p>'), 'worldchecktab' : str(worldchecktab).replace('\n', r'<p></p>')})
       #emit('my_response_dass',
@@ -213,6 +219,26 @@ def row_index_timmer(message):
 
    print("index call back" + message)
 
+
+@socketio.on('GenerateReport', namespace='/test')
+def fun_generate_report(message):
+   global filepathtemp
+   conn = sqlite3.connect(filepathtemp + str(getpass.getuser()).lower() + '.db')
+   c = conn.cursor()
+   c.execute('select * from Master where id = "' + message + '"')
+   rows = c.fetchall()
+   conn.close()
+   print(str(message))
+   #print(rows)
+   #row = rows[int(message) -1]
+   row = rows[0]
+   print("Timmer called : " + str(row))
+   print("Timmer called : " + str(row[0]))
+   emit('my_response_rowclick',
+        {'resultdata': str(row[14]).replace('\n', r'<p></p>'), 'AInews': str(row[13]).replace('\n', r'<p></p>'), 'otherwebvar': str(otherwebresult).replace('\n', r'<p></p>') })
+
+
+   print("index call back" + message)
 
 
 def removefile():
@@ -301,6 +327,7 @@ def worldcheckfun():
       xl=win32com.client.Dispatch("Excel.Application")
       workbook = xl.Workbooks.Open(os.path.abspath(filepathtemp + str(getpass.getuser()).lower() + ".xlsm"), ReadOnly=0)
       ws = xl.Worksheets("WorldCheck")
+      #Temp disable the run macro command
       xl.Application.Run(filepathtemp + str(getpass.getuser()).lower() + ".xlsm!ModWorldCheck.WorldCheck")
       print("WorldCheck macro completed")
       xl.DisplayAlerts = False
@@ -314,8 +341,12 @@ def worldcheckfun():
              rc = rc + 1
              dbCompanyName = str(ws.Cells(rc ,1).Value).replace('"', r'~').replace("'", r'')
              dbCompanyResult = str(ws.Cells(rc ,2).Value).replace('"', r'~').replace("'", r'')
+             dbCompanyReport = str(ws.Cells(rc ,3).Value).replace('"', r'~').replace("'", r'')
+             dbCompanysub = str(ws.Cells(rc ,4).Value).replace('"', r'~').replace("'", r'')
+             dbOrgName = str(ws.Cells(rc ,5).Value).replace('"', r'~').replace("'", r'')
+             dbMatchScore = str(ws.Cells(rc ,6).Value).replace('"', r'~').replace("'", r'')
 
-             c.execute("INSERT into WorldCheck (CompanyName, CompanyResult) VALUES ('" + dbCompanyName + "', '" +  dbCompanyResult + "')")
+             c.execute("INSERT into WorldCheck (CompanyName, CompanyResultFull, CompanyReport, CompanySub, OrgName, MatchScore) VALUES ('" + dbCompanyName + "', '" +  dbCompanyResult + "', '" +  dbCompanyReport + "', '" +  dbCompanysub + "', '" +  dbOrgName + "', '" + dbMatchScore + "')")
 
              #c.execute("INSERT into Master (ID, searchkey, sheetnumber, outertext, outerhtml, linkref, urlfull, filetype, emkeyword, Domainname, companyname, Status) VALUES ('" + str(ws.Cells(rc ,11).Value).replace('"', r'~') + "', '" +  str(ws.Cells(rc ,1).Value).replace('"', r'~') + "', '"  + str(ws.Cells(rc ,2).Value).replace('"', r'~') +  "', '" +  str("").replace('"', r'~') + "', '" +  str("").replace('"', r'~') +  "', '" +  str("").replace('"', r'~') +  "', '" +  str(ws.Cells(rc ,6).Value).replace('"', r'~') +  "', '" +  str(ws.Cells(rc ,7).Value).replace('"', r'~') +  "', '" +  str(ws.Cells(rc ,8).Value).replace('"', r'~') +  "', '" +  str(ws.Cells(rc ,9).Value).replace('"', r'~') +  "', '" +  str(ws.Cells(rc ,10).Value).replace('"', r'~') + "', 'YettoExtract')")
              conn.commit()
