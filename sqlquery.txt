@@ -1,3 +1,10 @@
+CREATE TABLE "Master" ( `ID` TEXT, `searchkey` TEXT, `sheetnumber` TEXT, `outertext` TEXT, `outerhtml` TEXT, `linkref` TEXT, `urlfull` TEXT, `filetype` TEXT, `emkeyword` TEXT, `Domainname` TEXT, `companyname` TEXT, `Status` TEXT, `rawtext` TEXT, `rawtexttag` TEXT, `negtext` TEXT, `AIScore` TEXT, `ListSelection` TEXT, PRIMARY KEY(`ID`) )
+
+CREATE TABLE `InputTable` ( `Searchstr` TEXT )
+CREATE TABLE `RefTable` ( `NoofPageSearch` INTEGER, `AIRequired` INTEGER, `CompanyName` TEXT, `Keywords` TEXT )
+CREATE TABLE "WorldCheck" ( `CompanyName` TEXT, `CompanyResultFull` TEXT, `CompanyReport` TEXT, `CompanySub` TEXT, `OrgName` TEXT, `MatchScore` TEXT )
+
+
 <([a-zA-Z]+)(?:[^>]*[^/]*)?>
 
 <\s*a[^>]*>(.*?)<\s*/\s*a>
