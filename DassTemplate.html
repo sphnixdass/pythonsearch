@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="utf-8"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VCG Google Search Tool</title>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+  <!--link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"-->
+
+
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/> -->
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+  <!--script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
+
+  <!-- <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+  <script type="text/javascript" language="javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+
+
+
+
+
+  <script type="text/javascript" charset="utf-8">
+    var tempsl = "";
+    var tempval = "";
+
+    $(document).ready(function () {
+
+      $('#idwait').hide();
+
+
+      
+
+      var tempdate = new Date();
+      $('#startdate').val(tempdate.getDate() + "/" + (tempdate.getMonth() + 1) + "/" + (tempdate.getFullYear() - 3));
+
+      $('#enddate').val(tempdate.getDate() + "/" +  (tempdate.getMonth() + 1) + "/" + tempdate.getFullYear());
+
+      namespace = '/test';
+      var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+      var t = $('#outputtable').DataTable({"columnDefs":[
+            {"searchable": false, "targets": [0,1,2,3,4,5]}
+
+          ]});
+
+      //hide column
+      t.column(7).visible(false);
+      //t.column(7).search(true);
+
+      socket.on('my_response_dass', function (msg) {
+        $('#idwait').hide();
+        //$('#outputtable').find("tr:gt(0)").remove();
+        //alert(msg.worldchecktab);
+        t.clear();
+        
+        var data = msg.resultdata;
+        //alert(data);
+        var temparr = [""];
+        var temparrch = [""];
+        var arr = data.split("<`>");
+        $.each(arr, function (index, value) {
+          var arr2 = value.split("<!>");
+          temparr.push('<a href="' + arr2[2] + '"  target="_blank"> Link </a>' + arr2[7]);
+          temparrch.push(arr2[0]);
+          t.row.add([arr2[0],
+          arr2[1],
+          arr2[2].replace('~',''),
+          arr2[3].replace('~',''),
+          parseInt(arr2[4]),
+          arr2[5],
+          parseInt(arr2[6]),
+          arr2[8],
+
+          ]).draw(true);
+
+          t.column(2, {order: 'applied' }).nodes().each(function (cell, i) {
+            cell.innerHTML = temparr[i + 1];
+          });
+
+          t.column(0, {order: 'applied' }).nodes().each(function (cell, i) {
+            cell.innerHTML = '<button title="After remove row, please click show result button" type="button" id="btn' + temparrch[i + 1] + '" class="btn">Remove</button><input type="checkbox" id="' + temparrch[i + 1] + '" value="' + temparrch[i + 1] + '">' + temparrch[i + 1];
+          });
+
+          //t.column(8, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+          //cell.innerHTML = '<a href="" class="editor_remove">Delete</a>';
+          //});
+
+
+
+        });
+
+  
+        
+
+//delete select row
+    $('#outputtable').on('click','.btn',function(){
+        //alert($(this).closest('td').text().toString().substring(6));
+        $(this).closest('tr').remove();
+        socket.emit('row_delete', $(this).closest('td').text().toString().substring(6));
+        $('#idwait').hide();
+      });
+
+
+        //alert(msg.Tempinput);
+        if (msg.Tempinput != "") {
+          console.log(msg.Tempinput);
+          $('#addquery option').remove();
+          var arr = msg.Tempinput.split("<,>");
+          console.log(arr);
+          $.each(arr, function (index, value) {
+            //alert(value);
+            $('#addquery').append('<option>' + $('<div/>').text(value).html());
+
+          });
+        }
+
+
+        $('#outputtable tbody').on('click', 'tr', function () {
+
+          var data = t.row(this).data();
+          //t.row(this).remove();
+          //console.log(t.cell(this));
+          tempsl = data[0];
+          tempval = data[2];
+          $('#idwait').show();
+          //t.row(this).remove();
+          socket.emit('row_Index', data[0].toString());
+        });
+
+      });
+
+
+
+      $('form#accform').submit(function (event) {
+
+      
+
+          var selectValues = "";
+          $("#addquery option").each(function () {
+            selectValues = selectValues + $(this).text() + "<,>";
+          });
+          //alert (selectValues);
+          $('#idwait').show();
+          socket.emit('click_submit', { companyname: selectValues, domainname: $('#domainname').val(), searchlist: $('#checkboxkey').val() });
+          //socket.emit('click_submit', {companyname: $('#companyname').val(), googlesearchpage:  $('#googlesearchpage').val()});
+        
+        return false;
+      });
+
+      //selected row result
+      socket.on('my_response_rowclick', function (msg) {
+        $('#idwait').hide();
+        
+        // $("#output").html('<p style="color:blue;">' + tempsl + ' : ' + tempval + '</p><p></p>' + msg.resultdata);
+        // $("#aicompletenews").html('<p style="color:blue;">' + tempsl + ' : ' + tempval + '</p><p></p>' + msg.AInews);
+        $("#output").html('<p style="color:blue;">' + msg.sln + ' : <a href="' + msg.TempUrl + '" target="_blank" >' + msg.TempUrl + '</a></p><p></p>' + msg.resultdata);
+        $("#aicompletenews").html('<p style="color:blue;">' + msg.sln + ' : <a href="' + msg.TempUrl + '" target="_blank" >' + msg.TempUrl + '</a></p><p></p>');
+        //$("#aicompletenews").html('<p style="color:blue;">' + msg.sln + ' : <a href="' + msg.TempUrl + '" target="_blank" >' + msg.TempUrl + '</a></p><p></p>' + msg.AInews);
+        //alert(msg.AInews);
+        tempainews = msg.AInews.split('~').join('"');
+        tempainews = tempainews.split('<head>').join('<head><base href="' + msg.baseurl + '" target="_blank">');
+        tempainews = tempainews.split('<p></p>').join('');
+
+        //tempainews = msg.AInews.replace('~','');
+        var doc = document.getElementById('iframe1').contentWindow.document;
+        doc.open();
+        doc.write(tempainews);
+        doc.close();
+
+
+      });
+
+//show result button
+      $("#btnExtract").click(function () {
+        $("#btnsubmit").html('Submit');
+        $("#btnExtract").html('Please Wait');
+        $('#idwait').show();
+        socket.emit('extract_button', { selectedIndex: $("#addquery").prop('selectedIndex') });
+        //alert("The paragraph was clicked.");
+        $("#btnExtract").html('Show Result');
+      });
+
+      //update slection
+
+      //$( "#addquery" ).change(function() {
+      // var res = this.value.split("<:>");
+      //t.search(res[0]).draw();
+      //});
+
+      $('#clear').click(function () {
+        //alert($("#exampleFormControlFile1").val());
+        location.reload();
+      });
+
+      $('#auditbutton').click(function () {
+        $('#idwait').show();
+        //alert ("#exampleFormControlFile1").val());
+        socket.emit('OpenAuditFile', "Audit File");
+
+      });
+
+
+
+      //google add
+      $('#Addbutton').click(function () {
+        $('#addquery').append('<option>' + $('<div/>').text($('#companyname').val() + '<:>' + $('#googlesearchpage').val() + '<:>' + $('#checkboxkey').val() + '<:>DomainName:' + $('#domainname').val() + '<:>AISearch:' + $('#AINeg').is(':checked') + '<:>StartDate:' + $('#startdate').val() + '<:>EndDate:' + $('#enddate').val()).html());
+      });
+
+
+      //remove button
+      $('#removebutton').click(function () {
+        $("#addquery option:selected").remove();
+        t.search("").draw();
+      });
+
+      $("#companyname").change(function () {
+        $("#domainname").val($("#companyname").val());
+        //alert( "Handler for .change() called." + $( "#companyname" ).text);
+      });
+
+
+
+
+
+
+      //myFunctiontest();
+    });
+  </script>
+  <script>
+    function myFunctiontest() {
+      setInterval(function () {
+        //code goes here that will be run every 5 seconds.
+        //alert("Hello");
+        var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+        socket.emit('testmy_event', "Timmer Testing");
+        console.log("Timer");
+      }, 2000);
+
+    }
+
+
+
+  //document.getElementById("companyname").onchange = function() {mydomainname()};
+  //function mydomainname() {
+  //  document.getElementById("domainname").Value = document.getElementById("companyname")
+
+  //}
+
+  </script>
+
+  <style>
+    a:link {
+      color: red;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:hover {
+      color: hotpink;
+    }
+
+    a:active {
+      color: blue;
+    }
+  </style>
+
+</head>
+
+
+<!--<body style="Background:#d8f4ff">-->
+<!--body style="background-image: url({{ url_for('static', filename='Image/backgroundimg.jpg') }})"-->
+
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <a class=" justify-content-md-center navbar-brand" href="#">VCG Automation</a>
+      </div>
+
+
+    </div>
+  </nav>
+
+
+
+
+  <form id="accform" method="POST" action='#'>
+    <fieldset>
+
+
+      <div class="container" style="Background:#c6d8f4">
+        <div class="card mb-3">
+          <!-- <div style="border-style: outset;" class="card mb-3"> -->
+          <h3 class="card-header text-primary" font color="black">Enter the Search details</h3>
+
+          <!--start of first row-->
+          <div class="row justify-content-md-center">
+
+            <div class="col col-lg-3">
+              <div class="form-group">
+                <label class="text-primary" for="exampleInputEmail1">Company Name</label>
+                <input type="text" class="form-control" style="height:auto;" id="companyname"
+                  aria-describedby="accountnumber" placeholder="Enter Company Name">
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+            <div class="col col-lg-2">
+              <div class="form-group">
+                <label class="text-primary" for="exampleSelect1">Google Search Page</label>
+                <select class="form-control" aria-describedby="accountnumber" style="height:auto;"
+                  id="googlesearchpage">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+
+
+                </select>
+              </div>
+
+            </div>
+
+            <div class="col col-lg-2">
+              <div class="form-group">
+                <label class="text-primary" for="exampleInputEmail1">Domain Name</label>
+                <input type="text" class="form-control" style="height:auto;" id="domainname"
+                  aria-describedby="accountnumber" placeholder="Enter Domain Name">
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+
+            <div class="col col-lg-2">
+              <div class="form-group">
+
+                <label class="text-primary" for="exampleSelect1">Include Search Keyword</label>
+
+
+                <select class="form-control" aria-describedby="accountnumber" style="height:auto;" id="checkboxkey">
+                  <option>NoKeyWord</option>
+                  <option>SearchKeyWordList1</option>
+                  <option>SearchKeyWordList2</option>
+                  <option>SearchKeyWordList3</option>
+                  <option>SearchKeyWordList4</option>
+                  <option>SearchKeyWordList5</option>
+
+                </select>
+
+
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+
+
+
+
+            <div class="col col-lg-3">
+              <div class="form-group">
+
+                <button type="button" id="Addbutton" style="width:auto;margin-top:25px;"
+                  class="form-control btn btn-success">Add</button>
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+
+          </div>
+          <!--end of first row-->
+
+          <!--second row -->
+          <div class="row justify-content-md-center">
+
+            <div class="col col-lg-2">
+              <div class="form-group">
+                <label class="text-primary" for="exampleInputEmail1">Start Date</label>
+                <input type="text" class="form-control" style="height:auto;" id="startdate"
+                  aria-describedby="accountnumber" placeholder="Start Date">
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+
+            <div class="col col-lg-2">
+              <div class="form-group">
+                <label class="text-primary" for="exampleInputEmail1">End Date</label>
+                <input type="text" class="form-control" style="height:auto;" id="enddate"
+                  aria-describedby="accountnumber" placeholder="End Date">
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+          </div>
+
+
+          <!--Third row-->
+
+
+
+
+
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-9">
+              <div class="form-group">
+                <label class="text-primary" for="exampleSelect2">Added Query</label>
+                <select style="overflow-y: scroll; overflow-x: scroll;" multiple="" class="form-control" id="addquery">
+
+                </select>
+              </div>
+            </div>
+            <div class="col col-lg-3">
+              <div class="pt-5 form-group">
+
+                <button type="button" id="removebutton" style="width:auto;margin-top:25px;"
+                  class="form-control btn btn-success">Remove</button>
+                <!--small id="accountnumber" class="form-text text-muted">Enter the account number.</small-->
+              </div>
+            </div>
+
+          </div>
+          <!-- Check Box start -->
+          <div class="card">
+            <div class="card-body">
+              <div class="row justify-content-md-center">
+
+
+                <div class="col col-lg-2">
+                  <div class="checkbox">
+                    <label class="text-primary">
+                      <input type="checkbox" id="AINeg" checked>Negative Search
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Check Box ended -->
+
+          <div class="card">
+            <div class="card-body">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                  <button type="submit" id="btnsubmit" class="btn btn-primary">Submit</button>
+                </div>
+
+                <div class="col col-lg-2">
+                  <button type="button" id="clear" class="btn btn-primary">Clear</button>
+                </div>
+
+                <!--div class="col col-lg-2">
+                  <button type="button" id="btndelete" class="btn btn-primary">Delete</button>
+                </div-->
+
+                <div class="col col-lg-2">
+                  <button type="button" id="btnExtract" class="btn btn-primary">Show Result</button>
+                </div>
+
+                <div class="col col-lg-2">
+                  <button type="button" id="auditbutton" class="btn btn-primary">Open Audit File</button>
+                </div>
+
+              </div>
+              <p id="idwait">Please Wait</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-md-center">
+          <!--- staring tab start -->
+          <div class="container">
+            <h2>Search Result</h2>
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#home" data-toggle="tab" aria-expanded="true">AI Score Board</a>
+              </li>
+              <li class="">
+                <a href="#menu1" data-toggle="tab" aria-expanded="false">AI Negative News</a>
+              </li>
+              <li class="">
+                <a href="#menu2" data-toggle="tab" aria-expanded="false">AI Complete News</a>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+              <div style="width:auto; border:1px solid green; padding:3px; padding: 5px;" id="home"
+                class="tab-pane fade in active">
+                <!--h3>HOME</h3-->
+
+                <table id="outputtable" class="table table-hover table-striped table-bordered table-condensed">
+                  <thead>
+                    <tr>
+                      <th scope="col">Sl</th>
+                      <th scope="col">Company Name
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                      </th>
+                      <th scope="col">Result URL</th>
+                      <th scope="col">Highlighted Keyword</th>
+                      <th scope="col">Google Page
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                      </th>
+                      <th scope="col">AI Score
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                      </th>
+                      <th scope="col">Match Score %</th>
+                      <th scope="col">Negative Text</th>
+                      <!--th scope="col">Delete</th-->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--tr class="table-active">
+      <th scope="row">Active</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr-->
+
+                  </tbody>
+                </table>
+
+              </div>
+              <div id="menu1" class="tab-pane fade">
+
+                <div class="card-body">
+                  <p id="output" class="card-text text-success" style="background:#fff; padding: 35px;"></p>
+
+                </div>
+
+
+              </div>
+              <div id="menu2" class="tab-pane fade" style="background:#fff; padding: 35px;">
+
+                <!-- <div class="card-body">
+                  <p id="aicompletenews" class="card-text text-success"></p>
+
+                </div> -->
+
+                <div class="card-body">
+                  <p id="aicompletenews" class="card-text text-success"></p>
+                  <iframe id="iframe1" src="about:blank" width="100%" height="1000px">
+                    Sorry your browser does not support inline frames. please contact agile automation team
+                  </iframe>
+                </div>
+
+                
+              </div>
+              <div id="menu3" class="tab-pane fade" style="background:#fff; padding: 35px;">
+                <div class="card-body">
+                  <p id="aiotherwebsites" class="card-text text-success"></p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <script>
+              $(document).ready(function () {
+                $(".nav-tabs a").click(function () {
+                  $(this).tab('show');
+                });
+              });
+            </script>
+            <!--- staring tab end -->
+
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <script type="text/javascript">
+        // set interval
+
+        function rowclick(x) {
+
+          namespace = '/test';
+          var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+          alert("hi");
+          alert("Row index is: " + x.columnIndex);
+          var num = x.rowIndex;
+          socket.emit('row_Index', num.toString());
+          console.log(x);
+
+        }
+      </script>
+
+
+
+    </fieldset>
+  </form>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="{{ url_for('static', filename='jquery-3.3.1.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> -->
+
+
+
+</body>
+
+</html>
