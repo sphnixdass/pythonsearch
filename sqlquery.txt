@@ -15,3 +15,68 @@ CREATE TABLE "WorldCheck" ( `CompanyName` TEXT, `CompanyResultFull` TEXT, `Compa
 
 
 CREATE TABLE "Master" ( `ID` INTEGER PRIMARY KEY AUTOINCREMENT, `CompanyName` TEXT, `Racf` TEXT, `Status` TEXT, `Url` TEXT, `googletext` TEXT, `googletagtext` TEXT, `rawtext` TEXT, `sentext` TEXT, `sentexttag` TEXT )
+
+==============
+
+				RPA Account opening process			
+Input:
+		Customer submits the completed form in the front office. Front office staff validates the form and submit it in internal portal.	
+Process:		
+	RPA tool extract information from internal portal on regular interval. The tool validates the data for completeness. In case of any incomplete and wrong information, the tool will move that case to exception queue and notify the respective team
+Tool will automatically logon to Mainframe with credential and navigate to multiple screens and update the user details. And created account number. 
+Tool update account details in the bank internal website and notify account opening team.
+	
+		
+
+
+•	Smart forms (PDFs) are built to meet business needs and improved Right First Time.
+•	Customer fills the smart forms and attaches the fully completed smart forms in the bank’s email id provided.
+•	 Data from smart form extracted successfully and digital data stored in excel 
+•	The automation tool will read the data from excel file and update these details in the bank system (Mainframe system).
+
+o	Activities attachmate v1.0.0)DLL imported for connecting with bank system.
+o	Using RE framework.
+Init (initialize) : opening the attachmate (bank system) using creditional,page logon
+Get transaction : On Init successful ,  get the input details from  Excel Process transaction: On Get transaction successful , Create XAML(flow chart) for account opening  activities.
+End process: Email the user with output attached that contains all customer application form details along with the account opened details
+
+•	The automation follows account opening screens on banks mainframe system. Final output along with status of processing and audit trail to be stored in business folder
+•	Automation to generate email with final output attached that contains all customer application form details along with the account opened details
+
+
+Negative News Search
+
+As per bank’s policy, any new vendor on boarding or renewing the contracts required background verification on the vendor.
+The NNS process involves the searching of negative news via Google search. The Google search method results in obtaining numerous pages and many news items that include a large number of relevant and irrelevant news items. Hence, in the current process the team is required to go through each and every news item to check if it is relevant.
+We have created artificial intelligence (AI) tool in python. The tool will search the vendor details in google and extract the information. Tool will read and understand the content, highlight the negative sentence and score the each webpage based on the negative content. In GUI , the tool will display the result along with artefacts. Hence user need not read the entire content from the webpage. User can concentrate only negative contents. All the search result and user decision are stored as audit trail. This tool has been implemented in AML (Anti money laundering ).
+Technology been used: 
+	Front end: Python flask
+	For sentiment analysis: NLTK (Natural language tool kit)
+ 	Backend: Python 3.6 and SQL Lite as database.
+
+
+
+
+
+
+
+
+
+
+
+
+
+					RPA SARS
+
+The Subject Access Request (SAR) Team receives circa 260 customer requests each month to obtain all the personal information we hold on them across our systems and records.  The SAR team uses a large number of Bank systems to manually obtain this personal information with the output being received in a number of formats / images and requires further editing to convert into a format suitable for sharing with the customers. 
+ 
+This current process is manual intensive, adding delay and rework, increasing the cost and timescales required to respond to the customer.  
+
+In order to overcome this challenge, we implemented RPA tool that automates the manual element of fetching personal information from various Bank systems and converts it in the format suitable for customer.
+RPA tool will interact with 17 applications and extract information in the PDF format.
+
+
+
+
+
+
